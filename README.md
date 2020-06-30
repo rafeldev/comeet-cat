@@ -7,7 +7,7 @@ Dynamic asteroid visualization system, Disclosure site dedicated to asteroids.
 * Styluss
 
 
-## Autores ✒️
+## Authors ✒️
 *Thanks to those who worked on the project and made every effort to achieve the expected result.*
 * **Hector Reyes** *Frontend Dev* [social networks](https://www.instagram.com/conejoestelar/)
 * **Rafael Alvarez** *Frontend Dev* [social networks](https://www.instagram.com/raalvarez_//)
