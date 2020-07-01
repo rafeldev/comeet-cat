@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../img/catspace.jpg";
+import "../static/css/index.css";
 import "./App.css";
 
 function App() {
