@@ -2,8 +2,8 @@ import React from 'react';
 import logo from '../img/catspace.jpg';
 
 /* --styles-- */
-import '../static/sass/font.scss';
-import '../static/sass/cat.scss';
+import '../static/sass/font.scss'
+
 
 import './App.css';
 

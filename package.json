@@ -9,13 +9,13 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "sass": "^1.26.9"
   },
   "scripts": {
     "build-css": "stylus -c src/static/stylus/ --out src/static/css",
     "watch-css": "npm run build-css && stylus -c -w src/static/stylus/ --out src/static/css",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
+    "start": "react-scripts start",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test",

@@ -1,6 +1,8 @@
-$color-red: red;
+@import "../sass/lib/variables.scss";
 
-h1 {
-  color: $color-red;
-  font-size: 54px;
+h1{
+    color: $primary-pink;
+    font-family: $font-2;
+    font-size: 35px;
+    
 }
