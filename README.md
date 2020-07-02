@@ -5,7 +5,7 @@ Dynamic asteroid visualization system, Disclosure site dedicated to asteroids.
 ## Built with 🛠️
 
 - React
-- Stylus
+- SASS
 
 ## Authors ✒️
 
