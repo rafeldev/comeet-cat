@@ -1,8 +1,11 @@
-@import "../sass/lib/variables.scss";
+@import '../sass/lib/variables.scss';
 
-h1{
-    color: $primary-pink;
-    font-family: $font-2;
-    font-size: 35px;
-    
+h1 {
+  color: $primary-pink;
+  font-family: $font-2;
+  font-size: $font__size-h1;
+}
+
+.github-icon {
+  font-size: $font__size-h1;
 }

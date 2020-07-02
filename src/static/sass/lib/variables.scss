@@ -1,50 +1,62 @@
 /* ---------- Cunia-Font ----------  */
 
 @font-face {
-    font-family: "Cunia";
-    src: url("./fonts/cunia.eot"); /* IE9 Compat Modes */
-    src: url("./fonts/cunia.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("./fonts/cunia.otf") format("opentype"), /* Open Type Font */
-      url("./fonts/cunia.svg") format("svg"), /* Legacy iOS */
-      url("./fonts/cunia.ttf") format("truetype"), /* Safari, Android, iOS */
-      url("./fonts/cunia.woff") format("woff"), /* Modern Browsers */
-      url("./fonts/cunia.woff2") format("woff2"); /* Modern Browsers */
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Cunia';
+  src: url('./fonts/cunia.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/cunia.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/cunia.otf') format('opentype'),
+    url('./fonts/cunia.svg') format('svg'),
+    url('./fonts/cunia.ttf') format('truetype'),
+    url('./fonts/cunia.woff') format('woff'),
+    url('./fonts/cunia.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* ---------- Montserrat-Font ----------  */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
 /* ---------- Spaces ----------  */
 
-
-
+$nano-space: 16px;
+$mini-space: 32px;
+$small-space: 48px;
+$medium-space: 80px;
+$large-space: 160px;
+$extra-space: 320px;
 
 /* ---------- Primary-Colors ----------  */
 
-$primary-yellow: #FEBC78;
-$primary-red: #FF5A6B;
-$primary-pink: #C8377F;
-$primary-Purple: #7424C9;
+$primary-yellow: #febc78;
+$primary-red: #ff5a6b;
+$primary-pink: #c8377f;
+$primary-Purple: #7424c9;
 
 /* ---------- Secondary-Colors ----------  */
 
-$secondary-purple: #B353FF;
-$secondary-blue: #49C0FF;
+$secondary-purple: #b353ff;
+$secondary-blue: #49c0ff;
 
 /* ---------- Gradient ----------  */
 
-$primary-gradient: linear-gradient(90deg, rgba(116,36,201,1) 0%, rgba(200,55,127,1) 50%, rgba(254,188,120,1) 100%);
+$primary-gradient: linear-gradient(
+  90deg,
+  rgba(116, 36, 201, 1) 0%,
+  rgba(200, 55, 127, 1) 50%,
+  rgba(254, 188, 120, 1) 100%
+);
 
-$secondary-gradient: linear-gradient(90deg, rgba(116,36,201,1) 0%, rgba(255,90,107,1) 0%, rgba(254,188,120,1) 100%);
+$secondary-gradient: linear-gradient(
+  90deg,
+  rgba(116, 36, 201, 1) 0%,
+  rgba(255, 90, 107, 1) 0%,
+  rgba(254, 188, 120, 1) 100%
+);
 
 /* ---------- Typography ----------  */
 
-$font-1: "Cunia";
+$font-1: 'Cunia';
 $font-2: 'Montserrat', sans-serif;
 
 /* ---------- Size-Typography ----------  */
@@ -63,10 +75,7 @@ $border-radius-small: 4px;
 
 /* ---------- box-shadow ----------  */
 
-$box-shadow-high: 4px 16px 32px 0px rgba(0,0,0,0.1);
-$box-shadow-medium:  2px 8px 16px 0px rgba(0,0,0,0.5);
-$box-shadow-low:  0px 4px 8px 0px rgba(0,0,0,0.25);
-$box-shadow-small-low: 0px 2px 4px 0px rgba(0,0,0,0.1);
-
-
-
+$box-shadow-high: 4px 16px 32px 0px rgba(0, 0, 0, 0.1);
+$box-shadow-medium: 2px 8px 16px 0px rgba(0, 0, 0, 0.5);
+$box-shadow-low: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+$box-shadow-small-low: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
