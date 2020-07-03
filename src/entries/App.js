@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from '../img/catspace.jpg';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 /* --styles-- */
 import '../static/sass/font.scss';
-import { AiOutlineGithub } from 'react-icons/ai';
+
+/* --Routes-- */
+import Home from '../Pages/Home';
+import AsteroidesApollo from '../Pages/AsteroidesApollo';
 
 import './App.css';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <h1>
-          Welcome to comeet-cat
-          <a className='github-icon' href=''>
-            <AiOutlineGithub />
-          </a>
-        </h1>
-        <img src={logo} className='catspace' alt='catspace' />
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Route path='/Home' component={Home} />
+        <Route path='/Astroides-Apollo' component={AsteroidesApollo} />
+      </div>
+    </BrowserRouter>
   );
 }
 
