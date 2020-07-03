@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 //styles
 import '../static/sass/SassComponents/Header.scss';
-import HeaderLogo from '../img/HeaderLogo.svg';
+import ComeetLogo from '../img/comeet-cat-logo.svg';
 import GithubIcon from '../img/GithubIcon.svg';
 
 class Header extends Component {
@@ -10,15 +11,15 @@ class Header extends Component {
     return (
       <div className='Header'>
         <div className='Header__logo'>
-          <img src={HeaderLogo} alt='Logo del header' />
+          <img src={ComeetLogo} alt='Logo del header' />
         </div>
         <div className='Header__menu'>
           <ul className='Header__menu--list'>
             <li>
-              <a href=''>Home</a>
+              <Link to='/Home'>Home</Link>
             </li>
             <li>
-              <a href=''>Asteroides Apollo</a>
+              <Link to='/Astroides-Apollo'>Asteroides Apollo</Link>
             </li>
             <li>
               <a href=''>Team</a>

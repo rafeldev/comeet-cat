@@ -9,6 +9,7 @@
 }
 
 .Header__logo img {
+  padding: 8px;
   width: 200px;
 }
 
@@ -27,7 +28,7 @@
   font-size: $font__size-h6;
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .Github__icon {
