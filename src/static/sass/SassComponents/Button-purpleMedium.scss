@@ -1,0 +1,36 @@
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
+
+.button__Purple-medium {
+  text-decoration: none;
+  color: white;
+  font-family: $font-2;
+  font-weight: bold;
+  font-size: 12px;
+  @include button-purple-medium;
+  background-image: linear-gradient(
+    to right,
+    #667eea,
+    #764ba2,
+    #6b8dd6,
+    #8e37d7
+  );
+  border: none;
+  cursor: pointer;
+  background-size: 300% 100%;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.button__Purple-medium:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.button__Purple-medium:focus {
+  outline: none;
+}

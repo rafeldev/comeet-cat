@@ -1,0 +1,31 @@
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
+
+.button__primary-medium {
+  text-decoration: none;
+  font-family: $font-2;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  @include button-primary-medium;
+  background-image: linear-gradient(to right, #7424c9, #c8377f, #febc78);
+  border: none;
+  cursor: pointer;
+  background-size: 300% 100%;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.button__primary-medium:hover {
+  color: #3c1268;
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.button__primary-medium:focus {
+  outline: none;
+}

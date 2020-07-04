@@ -1,86 +1,82 @@
 @import './variables.scss';
 
-
 /* ---------- typography ----------  */
 
 //lo nombre como 'title' porque cunia no tiene mas modificaciones sino solo el tamaño :D
 @mixin title {
-    font-family: $font-1;
-    font-size: $font__size-h1;    
+  font-family: $font-1;
+  font-size: $font__size-h1;
 }
 
 //aqui pasa igual solo modifica el tamaño en 3 ocasiones y todas son bold
 @mixin subtitle {
-    font-family: $font-2;
-    font-size: $font__size-h4;
-    font-weight: bold;
+  font-family: $font-2;
+  font-size: $font__size-h4;
+  font-weight: bold;
 }
 
 @mixin p {
-    font-family: $font-2;
-    font-size: $font__size-p;
-    font-weight: 400;
+  font-family: $font-2;
+  font-size: $font__size-p;
+  font-weight: 400;
 }
 
 @mixin a {
-    font-family: $font-1;
-    font-size: $font__size-a;
+  font-family: $font-1;
+  font-size: $font__size-a;
 }
 
 @mixin strong {
-    font-family: $font-2;
-    font-size: $font__size-strong;
-    font-weight: bold;
+  font-family: $font-2;
+  font-size: $font__size-strong;
+  font-weight: bold;
 }
 
 /* ---------- icon ----------  */
 
 @mixin icon {
-    width: 80px;
-    height: 79px;
+  width: 80px;
+  height: 79px;
 }
-
 
 /* ---------- Buttons ----------  */
 
 @mixin button-primary-medium {
-    width: 382px;
-    height: 80px;
-    border-radius: $border-radius;
-    background: $primary-gradient;
+  width: 191px;
+  height: 40px;
+  border-radius: $border-radius;
+  background: $primary-gradient;
 }
 @mixin button-secondary-medium {
-    width: 382px;
-    height: 80;
-    border-radius: $border-radius;
-    background: $secondary-gradient;
+  width: 191px;
+  height: 40px;
+  border-radius: $border-radius;
+  background: $secondary-gradient;
 }
 @mixin button-purple-medium {
-    width: 382px;
-    height: 80px;
-    border-radius: $border-radius;
-    background: $primary-Purple;
+  width: 191px;
+  height: 40px;
+  border-radius: $border-radius;
+  background: $primary-Purple;
 }
 
 /* ---------- small-Buttons ----------  */
 
 @mixin button-primary-small {
-    width: 142px;
-    height: 35px;
-    border-radius: $border-radius-small;
-    background: $primary-gradient;
+  width: 71px;
+  height: 16px;
+  border-radius: $border-radius-small;
+  background: $primary-gradient;
 }
 @mixin button-secondary-small {
-    width: 142px;
-    height: 35px;
-    border-radius: $border-radius-small;
-    background: $secondary-gradient;
+  width: 71px;
+  height: 16px;
+  border-radius: $border-radius-small;
+  background: $secondary-gradient;
 }
 @mixin button-purple-small {
-    width: 142px;
-    height: 35px;
-    border-radius: $border-radius-small;
-    background: $primary-Purple;
+  width: 71px;
+  height: 16px;
+  border-radius: $border-radius-small;
+  background: $primary-Purple;
 }
-
-
