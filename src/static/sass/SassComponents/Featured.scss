@@ -1,0 +1,15 @@
+.featured {
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  padding: $mini-space;
+  img {
+    max-width: $medium-space;
+  }
+  &__info {
+    padding: $nano-space;
+  }
+  &__title {
+    color: $primary-yellow;
+  }
+}
