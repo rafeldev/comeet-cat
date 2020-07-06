@@ -6,15 +6,13 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.Header__logo img {
-  padding: 8px;
-  width: 200px;
-}
-
-.Header__menu {
-  display: flex;
+  &__logo img {
+    padding: 8px;
+    width: 200px;
+  }
+  &__menu {
+    display: flex;
+  }
 }
 
 .Header__menu--list {
