@@ -1,0 +1,44 @@
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
+
+.Hero__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  &__text {
+    width: 40%;
+  }
+}
+
+.Hero__title {
+  font-family: $font-1;
+  font-size: $font__size-h3;
+  color: #fff;
+}
+
+.Container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.Hero__img {
+  position: absolute;
+  display: flex;
+  //margin-left: 45px;
+  margin-left: 120px;
+}
+
+.Hero__img img {
+  width: 280px;
+}
+.Container__gradient {
+  width: 163px;
+  height: 278px;
+  //margin-left: auto;
+  margin-left: auto;
+  margin-right: 50px;
+  background: $primary-gradient;
+  border-radius: $border-radius;
+}

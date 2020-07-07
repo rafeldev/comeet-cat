@@ -1,13 +1,14 @@
 @import '../lib/variables.scss';
 
 .Header {
-  width: 80% auto;
+  width: 80%;
+  margin: 0 auto;
   height: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   &__logo img {
-    padding: 8px;
+    padding: 8px 0 8px;
     width: 200px;
   }
   &__menu {

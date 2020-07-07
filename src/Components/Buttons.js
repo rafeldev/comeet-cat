@@ -8,24 +8,30 @@ import '../static/sass/SassComponents/Button-purpleSmall.scss';
 
 class ButtonPrimaryMedium extends Component {
   render() {
-    return <button className='button__primary-medium'>Button primary</button>;
+    return (
+      <button className='button__primary-medium'>{this.props.title}</button>
+    );
   }
 }
 class ButtonPrimarySmall extends Component {
   render() {
-    return <button className='button__primary-small'>Details</button>;
+    return (
+      <button className='button__primary-small'>{this.props.title}</button>
+    );
   }
 }
 
 /* buttons purple */
 class ButtonPurpleMedium extends Component {
   render() {
-    return <button className='button__Purple-medium'>Button purple</button>;
+    return (
+      <button className='button__Purple-medium'>{this.props.title}</button>
+    );
   }
 }
 class ButtonPurpleSmall extends Component {
   render() {
-    return <button className='button__Purple-small'>Details</button>;
+    return <button className='button__Purple-small'>{this.props.title}</button>;
   }
 }
 export {

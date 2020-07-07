@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/Home' component={Home} />
+        <Route path='/' component={Home} />
         <Route path='/Astroides-Apollo' component={AsteroidesApollo} />
         <Route path='/All-Asteroid' component={AllAsteroid} />
         <Route path='/Detail' component={Details} />
