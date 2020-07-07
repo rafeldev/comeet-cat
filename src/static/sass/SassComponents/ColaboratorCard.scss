@@ -1,0 +1,29 @@
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
+
+.ColaboratorCard {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: $border-radius;
+  width: $extra-space;
+  height: ($large-space * 3);
+  padding: $mini-space;
+  margin: $mini-space;
+  background-color: $primary-purple;
+  &__title {
+    font-family: $font-2;
+    font-size: $font__size-h6;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+  }
+  &__name {
+    font-family: $font-2;
+    font-size: $font__size-h4;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+}

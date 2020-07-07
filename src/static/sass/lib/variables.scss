@@ -1,21 +1,21 @@
 /* ---------- Cunia-Font ----------  */
 
 @font-face {
-  font-family: 'Cunia';
-  src: url('./fonts/cunia.eot'); /* IE9 Compat Modes */
-  src: url('./fonts/cunia.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/cunia.otf') format('opentype'),
-    url('./fonts/cunia.svg') format('svg'),
-    url('./fonts/cunia.ttf') format('truetype'),
-    url('./fonts/cunia.woff') format('woff'),
-    url('./fonts/cunia.woff2') format('woff2'); /* Modern Browsers */
+  font-family: "Cunia";
+  src: url("./fonts/cunia.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/cunia.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/cunia.otf") format("opentype"),
+    url("./fonts/cunia.svg") format("svg"),
+    url("./fonts/cunia.ttf") format("truetype"),
+    url("./fonts/cunia.woff") format("woff"),
+    url("./fonts/cunia.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 
 /* ---------- Montserrat-Font ----------  */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* ---------- Spaces ----------  */
 
@@ -31,7 +31,7 @@ $extra-space: 320px;
 $primary-yellow: #febc78;
 $primary-red: #ff5a6b;
 $primary-pink: #c8377f;
-$primary-Purple: #7424c9;
+$primary-purple: #7424c9;
 
 /* ---------- Secondary-Colors ----------  */
 
@@ -56,8 +56,8 @@ $secondary-gradient: linear-gradient(
 
 /* ---------- Typography ----------  */
 
-$font-1: 'Cunia';
-$font-2: 'Montserrat', sans-serif;
+$font-1: "Cunia";
+$font-2: "Montserrat", sans-serif;
 
 /* ---------- Size-Typography ----------  */
 
