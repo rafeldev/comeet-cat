@@ -1,3 +1,6 @@
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
+
 .featured {
   display: flex;
   flex-direction: row;
@@ -6,10 +9,28 @@
   img {
     max-width: $medium-space;
   }
+  &__grid {
+    display: grid;
+    grid-template-columns: $extra-space 1fr $extra-space;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 2;
+  }
   &__info {
     padding: $nano-space;
+    text-align: start;
   }
   &__title {
+    font-family: $font-1;
+    font-size: $font__size-h5;
     color: $primary-yellow;
+    margin: -($nano-space);
+  }
+  &__description {
+    font-family: $font-2;
+    font-size: $font__size-h6;
+    color: white;
   }
 }

@@ -8,7 +8,7 @@ class Featured extends Component {
         <img src="" alt="" />
         <div className="featured__info">
           <h3 className="featured__title">{this.props.title}</h3>
-          <p>{this.props.description}</p>
+          <p className="featured__description">{this.props.description}</p>
         </div>
       </div>
     );
