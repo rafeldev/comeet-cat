@@ -1,0 +1,31 @@
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
+
+.cta {
+  background-color: $primary-purple;
+  padding: 0;
+  border-radius: $nano-space;
+  grid-column-start: 2;
+  &__grid {
+    display: grid;
+    grid-template-columns: $extra-space 1fr $extra-space;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: $medium-space;
+    width: 50%;
+    h3 {
+      font-family: $font-1;
+      font-size: $font__size-h2;
+      color: $primary-white;
+    }
+    p {
+      font-family: $font-2;
+      font-size: $font__size-h6;
+      color: $primary-white;
+    }
+  }
+}

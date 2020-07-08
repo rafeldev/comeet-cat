@@ -1,0 +1,23 @@
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
+
+.titles-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 30%;
+  padding: $mini-space;
+  color: $primary-white;
+  &__title {
+    color: $primary-white;
+    font-family: $font-1;
+    font-size: $font__size-h2;
+  }
+  &__description {
+    color: $primary-white;
+    font-family: $font-2;
+    font-size: $font__size-h6;
+    font-weight: normal;
+  }
+}

@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 import Header from "../Components/Header";
 import FeaturedContainer from "./containers/FeaturedContainer";
-import ColaboratorCard from "../Components/ColaboratorCard";
+import ColaboratorContainer from "./containers/ColaboratorsContainer";
+import CallToAction from "./containers/CallToAction";
 
 class Home extends Component {
   render() {
@@ -10,7 +11,8 @@ class Home extends Component {
       <div>
         <Header />
         <FeaturedContainer />
-        <ColaboratorCard title="Frontend Cosmonaut" name="Héctor Reyes" />
+        <ColaboratorContainer />
+        <CallToAction />
       </div>
     );
   }

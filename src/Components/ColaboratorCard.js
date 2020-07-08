@@ -5,9 +5,9 @@ import SocialMediaCard from "./SocialMediaCard";
 class ColaboratorCard extends Component {
   render() {
     return (
-      <div className="ColaboratorCard">
-        <h4 className="ColaboratorCard__title">{this.props.title}</h4>
-        <h2 className="ColaboratorCard__name">{this.props.name}</h2>
+      <div className="colaborator-card">
+        <h4 className="colaborator-card__title">{this.props.title}</h4>
+        <h2 className="colaborator-card__name">{this.props.name}</h2>
         <SocialMediaCard />
       </div>
     );
