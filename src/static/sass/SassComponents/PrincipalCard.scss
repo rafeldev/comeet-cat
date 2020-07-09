@@ -61,6 +61,7 @@ hr {
 }
 
 #progressbar {
+  box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
   background-color: white;
   border-radius: 13px;
   height: 9px;
