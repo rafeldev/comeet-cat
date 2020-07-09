@@ -4,7 +4,10 @@
 .Hero__container {
   padding-top: 10px;
   width: 80%;
-  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   display: flex;
   justify-content: space-around;
   &__text {
@@ -15,7 +18,7 @@
 .Hero__title {
   font-family: $font-1;
   font-size: $font__size-h2;
-  color: #fff;
+  color: $primary-yellow;
 }
 
 .Container {

@@ -63,20 +63,23 @@
 /* ---------- small-Buttons ----------  */
 
 @mixin button-primary-small {
-  width: 71px;
-  height: 16px;
+  width: 140px;
+  height: 35px;
   border-radius: $border-radius-small;
   background: $primary-gradient;
 }
 @mixin button-secondary-small {
-  width: 71px;
-  height: 16px;
+  width: 140px;
+  height: 35px;
   border-radius: $border-radius-small;
   background: $secondary-gradient;
 }
 @mixin button-purple-small {
-  width: 71px;
-  height: 16px;
+  width: 140px;
+  height: 35px;
   border-radius: $border-radius-small;
   background: $primary-Purple;
+  font-size: 14px;
+  font-family: $font-2;
+  font-weight: 400;
 }

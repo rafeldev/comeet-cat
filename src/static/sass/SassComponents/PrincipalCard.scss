@@ -72,11 +72,22 @@ hr {
 #progressbar > div {
   height: 5px;
   background-color: #331865;
-  width: 40%; /* Adjust with JavaScript */
+  width: 60%; /* Adjust with JavaScript */
   height: 10px;
   border-radius: 10px;
 }
 
 .Card__footer {
   margin-left: 18px;
+  display: flex;
+  justify-content: space-between;
+
+  & svg {
+    margin-right: 8px;
+    color: #331865;
+  }
+}
+
+.ButtonPurpleSmall {
+  margin-right: 8px;
 }

@@ -31,7 +31,14 @@ class ButtonPurpleMedium extends Component {
 }
 class ButtonPurpleSmall extends Component {
   render() {
-    return <button className='button__Purple-small'>{this.props.title}</button>;
+    const styles = {
+      margin: this.props.margin,
+    };
+    return (
+      <button style={styles} className='button__Purple-small'>
+        {this.props.title}
+      </button>
+    );
   }
 }
 export {

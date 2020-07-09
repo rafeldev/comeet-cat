@@ -2,9 +2,12 @@
 @import '../lib/variables.scss';
 
 .Data__container {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   width: 60%;
   height: 400px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -27,7 +30,7 @@ span {
 
 h1 {
   margin: 20px 0;
-  color: #fff;
+  color: $primary-yellow;
   font-family: $font-1;
 }
 

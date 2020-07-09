@@ -4,8 +4,6 @@
 .button__Purple-small {
   text-decoration: none;
   color: white;
-  font-family: $font-2;
-  font-weight: bold;
   font-size: 8px;
   @include button-purple-small;
   background-image: linear-gradient(

@@ -4,8 +4,8 @@
 .button__primary-small {
   text-decoration: none;
   font-family: $font-2;
-  font-weight: bold;
-  font-size: 8px;
+  font-weight: 400;
+  font-size: 14px;
   color: white;
   @include button-primary-small;
   background-image: linear-gradient(to right, #7424c9, #c8377f, #febc78);

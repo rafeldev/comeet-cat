@@ -1,0 +1,29 @@
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
+
+.Container__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titles-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 50%;
+  color: $primary-white;
+  &__title {
+    color: $primary-yellow;
+    font-family: $font-1;
+    font-size: $font__size-h2;
+    margin-bottom: 16px;
+  }
+  &__description {
+    color: $primary-white;
+    font-family: $font-2;
+    font-size: $font__size-h6;
+    font-weight: normal;
+    margin-top: 0;
+  }
+}
