@@ -2,10 +2,11 @@
 @import '../lib/mixin.scss';
 
 .Hero__container {
+  padding-top: 10px;
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   &__text {
     width: 40%;
   }
@@ -13,13 +14,14 @@
 
 .Hero__title {
   font-family: $font-1;
-  font-size: $font__size-h3;
+  font-size: $font__size-h2;
   color: #fff;
 }
 
 .Container {
   width: 40%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 

@@ -1,0 +1,20 @@
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
+
+.Card__container--padre {
+  height: 500px;
+}
+
+.Card__container {
+  width: 308px;
+  height: 400px;
+  background: $primary-gradient;
+  border-radius: $border-radius;
+  position: relative;
+}
+
+.Card__img {
+  width: 280px;
+  position: absolute;
+  display: flex;
+}

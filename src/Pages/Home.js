@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 
+import '../static/sass/SassPages/Home.scss';
+
 import Header from '../Components/Header';
-import Hero from '../Components/Hero';
+import PrincipalCard from '../Components/PrincipalCard';
 
 class Home extends Component {
   render() {
     return (
       <div>
         <Header />
-        <Hero />
+        <div className='Card'>
+          <PrincipalCard />
+        </div>
       </div>
     );
   }
