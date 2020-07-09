@@ -1,0 +1,60 @@
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
+
+.detail-name__container {
+  max-width: 45%;
+  min-height: 100%;
+  background-color: $primary-pink;
+  padding: $small-space;
+  h2 {
+    font-family: $font-1;
+    font-size: $font__size-h1;
+    color: $primary-white;
+  }
+  img {
+    border-radius: $border-radius;
+  }
+}
+
+.detail-info__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: $medium-space;
+  width: 55%;
+  h3 {
+    font-family: $font-1;
+    font-size: $font__size_h3;
+    color: $primary-white;
+    margin: 0;
+  }
+  ul {
+    font-family: $font-2;
+    font-size: $font__size-h5;
+    list-style: none;
+    padding-inline-start: 0;
+    color: $primary-white;
+    li {
+      margin: $nano-space;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 $large-space;
+  margin: $medium-space auto;
+  max-width: 60%;
+  min-height: 40vh;
+  border-radius: $border-radius * 4;
+  background-color: $primary-purple;
+}
+
+.details-icon {
+  color: $primary-white;
+  margin-right: $nano-space / 2;
+}

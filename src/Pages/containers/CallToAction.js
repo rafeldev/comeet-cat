@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { ButtonPrimaryMedium } from "../../Components/Buttons";
 import "../../static/sass/SassComponents/CallToAction.scss";
+import Asteroid from "../../img/asteroid.svg";
 
 class CallToAction extends Component {
   render() {
@@ -15,7 +16,7 @@ class CallToAction extends Component {
             </p>
             <ButtonPrimaryMedium>Details</ButtonPrimaryMedium>
           </div>
-          <img className="cta__img" src="" alt="" />
+          <img className="cta__img" src={Asteroid} alt="" />
         </div>
       </div>
     );

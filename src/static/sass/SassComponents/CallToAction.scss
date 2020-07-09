@@ -2,6 +2,8 @@
 @import "../lib/mixin.scss";
 
 .cta {
+  display: flex;
+  flex-direction: row;
   background-color: $primary-purple;
   padding: 0;
   border-radius: $nano-space;
@@ -16,7 +18,7 @@
     justify-content: center;
     align-items: flex-start;
     padding: $medium-space;
-    width: 50%;
+    max-width: 50%;
     h3 {
       font-family: $font-1;
       font-size: $font__size-h2;
@@ -27,5 +29,8 @@
       font-size: $font__size-h6;
       color: $primary-white;
     }
+  }
+  img {
+    max-width: 50%;
   }
 }
