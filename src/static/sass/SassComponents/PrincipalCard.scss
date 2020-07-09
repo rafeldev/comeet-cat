@@ -1,10 +1,6 @@
 @import '../lib/variables.scss';
 @import '../lib/mixin.scss';
 
-.Card__container--padre {
-  height: 500px;
-}
-
 .Card__container {
   width: 308px;
   height: 400px;
@@ -15,6 +11,71 @@
 
 .Card__img {
   width: 280px;
+  margin: -140px 14px;
   position: absolute;
   display: flex;
+}
+
+.Card__text {
+  margin-top: 100px;
+  color: #fff;
+  font-family: $font-2;
+  font-size: $font__size-h6;
+}
+
+.diametro {
+  text-align: center;
+  margin: 20px 0;
+  font-size: $font__size-h6;
+}
+
+.Card__text h2 {
+  margin-top: 0;
+  margin-bottom: 9px;
+  margin-left: 16px;
+  font-size: $font__size-h4;
+}
+.ultimo__avistamieto {
+  margin-left: 16px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.proximidad {
+  margin-top: 7px;
+  margin-left: 16px;
+  margin-bottom: 34px;
+  font-size: 16px;
+}
+
+hr {
+  margin-top: 12;
+  margin: 0;
+  margin-left: 16px;
+  text-align: left;
+  width: 10%;
+  height: 5px;
+  border-width: 0;
+  border-radius: 90px;
+  background-color: #f73096;
+}
+
+#progressbar {
+  background-color: white;
+  border-radius: 13px;
+  height: 9px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+#progressbar > div {
+  height: 5px;
+  background-color: #331865;
+  width: 40%; /* Adjust with JavaScript */
+  height: 10px;
+  border-radius: 10px;
+}
+
+.Card__footer {
+  margin-left: 18px;
 }
