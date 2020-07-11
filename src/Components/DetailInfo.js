@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../static/sass/SassComponents/AsteroidDetail.scss";
-import { ButtonPrimaryMedium } from "../Components/Buttons";
+import { ButtonPrimaryMedium } from "./Buttons";
+import Share from "./Share";
+import Hazardous from "./Hazardous.js";
 
 import {
   GiRingedPlanet,
@@ -13,6 +15,7 @@ class DetailInfo extends Component {
   render() {
     return (
       <div className="detail-info__container">
+        <Hazardous />
         <h3>Datos:</h3>
         <ul>
           <li>
@@ -33,6 +36,7 @@ class DetailInfo extends Component {
           </li>
         </ul>
         <ButtonPrimaryMedium>Details</ButtonPrimaryMedium>
+        <Share />
       </div>
     );
   }
