@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Header from '../Components/Header';
+import Header from "../Components/Header";
 
-class Home extends Component {
+class AllAsteroid extends Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default AllAsteroid;

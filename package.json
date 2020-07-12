@@ -15,11 +15,8 @@
     "sass": "^1.26.9"
   },
   "scripts": {
-    "build-css": "stylus -c src/static/stylus/ --out src/static/css",
-    "watch-css": "npm run build-css && stylus -c -w src/static/stylus/ --out src/static/css",
     "start": "react-scripts start",
-    "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,0 +1,39 @@
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  grid-column-start: 2;
+  &__grid {
+    display: grid;
+    grid-template-columns: $extra-space 1fr $extra-space;
+    max-width: 100%;
+    margin-top: $large-space;
+    padding: $small-space;
+    background-color: $primary-purple;
+  }
+  &__social {
+    width: 40%;
+    h4 {
+      font-family: $font-1;
+      font-size: $font__size-h4;
+      color: $primary-white;
+    }
+  }
+  &__project {
+    text-align: right;
+    width: 40%;
+    img {
+      padding: 8px;
+      width: 200px;
+    }
+    p {
+      font-family: $font-2;
+      font-size: $font__size-h6;
+      color: $primary-white;
+    }
+  }
+}
