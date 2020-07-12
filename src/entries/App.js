@@ -16,19 +16,11 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-<<<<<<< HEAD
-        <Route path='/' component={Home} />
-        <Route path='/Astroides-Apollo' component={AsteroidesApollo} />
-        <Route path='/All-Asteroid' component={AllAsteroid} />
-        <Route path='/Detail' component={Details} />
-        <Route path='/Namin-Asteroid' component={NaminAsteroid} />
-=======
         <Route path="/" component={Home} />
         <Route path="/Astroides-Apollo" component={AsteroidesApollo} />
         <Route path="/AllAsteroid" component={AllAsteroid} />
         <Route path="/Detail" component={Details} />
         <Route path="/Namin-Asteroid" component={NaminAsteroid} />
->>>>>>> cc-hector
       </Switch>
     </BrowserRouter>
   );
