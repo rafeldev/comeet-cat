@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 
 import Header from '../Components/Header';
-import LastAsteroids from '../Components/LastAsteroids';
-import DataTransformContainer from '../Components/DataTransformContainer';
-import Hero from '../Components/Hero';
+import Footer from '../Components/Footer';
 
-import '../index.scss';
+import '../index.css';
 
 class Home extends Component {
   render() {
