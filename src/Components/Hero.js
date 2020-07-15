@@ -14,7 +14,7 @@ class Hero extends Component {
             la tierra listos para <br />
             que los descubras
           </h1>
-          <ButtonPrimaryMedium title='Descubrir Asteroides' />
+          <ButtonPrimaryMedium to='/AllAsteroid' title='Descubrir Asteroides' />
         </div>
         <div className='Container'>
           <div className='Hero__img'>

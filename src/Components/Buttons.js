@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 /* styles */
 import '../static/sass/SassComponents/Button-primaryMedium.scss';
@@ -9,7 +10,9 @@ import '../static/sass/SassComponents/Button-purpleSmall.scss';
 class ButtonPrimaryMedium extends Component {
   render() {
     return (
-      <button className='button__primary-medium'>{this.props.title}</button>
+      <Link to={this.props.to}>
+        <button className='button__primary-medium'>{this.props.title}</button>
+      </Link>
     );
   }
 }

@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
+import Hero from '../Components/Hero';
+import FeaturedContainer from '../Pages/containers/FeaturedContainer';
+import EstaticInformation from '../Pages/containers/EstaticInformation';
+import LastAsteroids from '../Components/LastAsteroids';
+import CertificateContainer from './containers/CertificateContainer';
+import ApolloAsteroid from '../Components/ApolloAsteroids';
+import CallToAction from './containers/CallToAction';
 
 import '../index.css';
 
@@ -9,11 +14,18 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Hero />
+        <FeaturedContainer />
+        <EstaticInformation />
+        <LastAsteroids />
+        <CertificateContainer />
+        <ApolloAsteroid />
+        <CallToAction />
       </div>
     );
   }
 }
 
 export default Home;
+
+/*  */

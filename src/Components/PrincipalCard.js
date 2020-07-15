@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import CardImg from '../img/heroImg.svg';
 import { ButtonPurpleSmall } from './Buttons';
 import { TiWarning } from 'react-icons/ti';
@@ -30,7 +31,9 @@ class PrincipalCard extends Component {
               <TiWarning size='32px' />
               <AiOutlineClockCircle size='32px' />
             </div>
-            <ButtonPurpleSmall margin=' 0 10px 0 0 ' title='Ver Detalles' />
+            <Link to='/Detail'>
+              <ButtonPurpleSmall margin=' 0 10px 0 0 ' title='Ver Detalles' />
+            </Link>
           </div>
         </div>
       </div>

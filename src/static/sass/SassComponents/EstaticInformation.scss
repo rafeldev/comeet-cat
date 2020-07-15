@@ -1,0 +1,50 @@
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
+
+.container {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: 243px;
+  background-color: $primary-purple;
+  border-radius: $nano-space;
+  box-shadow: $box-shadow-medium;
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    h5 {
+      text-align: center;
+      margin-top: 110px;
+      margin-bottom: 0px;
+      font-size: $font__size-h5;
+      color: $primary-white;
+      font-family: $font-1;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 0;
+      font-family: $font-2;
+      color: $primary-white;
+      font-size: $font__size-h6;
+    }
+
+    h3 {
+      margin-top: 60px;
+      margin-bottom: 0px;
+      text-align: center;
+      color: $primary-white;
+      font-family: $font-1;
+      font-size: $font__size-h2;
+    }
+  }
+}
+
+.Container__2 {
+  margin-bottom: 50px;
+}
+.Container__1 .Container__2 .Container__3 {
+  text-align: center;
+}

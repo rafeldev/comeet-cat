@@ -4,8 +4,11 @@
 .Card__container {
   width: 308px;
   height: 400px;
+  margin-bottom: 135px;
   background: $primary-gradient;
   border-radius: $border-radius;
+  box-shadow: $box-shadow-medium;
+
   position: relative;
 }
 

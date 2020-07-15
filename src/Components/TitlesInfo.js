@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ButtonPrimarySmall } from './Buttons';
+import { Link } from 'react-router-dom';
 import '../static/sass/SassComponents/TitlesInfo.scss';
 
 class TitlesInfo extends Component {
@@ -8,7 +9,9 @@ class TitlesInfo extends Component {
       <div className='titles-info'>
         <h2 className='titles-info__title'>{this.props.title}</h2>
         <p className='titles-info__description'>{this.props.description}</p>
-        <ButtonPrimarySmall title='Details'></ButtonPrimarySmall>
+        <Link to={this.props.to}>
+          <ButtonPrimarySmall title='Ver màs'></ButtonPrimarySmall>
+        </Link>
       </div>
     );
   }

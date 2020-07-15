@@ -1,7 +1,8 @@
-@import "../lib/variables.scss";
-@import "../lib/mixin.scss";
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
 
 .featured {
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   width: 33%;

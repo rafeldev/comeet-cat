@@ -1,5 +1,5 @@
-@import "../lib/variables.scss";
-@import "../lib/mixin.scss";
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
 
 .cta {
   display: flex;
@@ -8,7 +8,10 @@
   padding: 0;
   border-radius: $nano-space;
   grid-column-start: 2;
+  box-shadow: $box-shadow-medium;
   &__grid {
+    margin-top: 200px;
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: $extra-space 1fr $extra-space;
   }
