@@ -8,6 +8,9 @@ import { AiOutlineClockCircle } from 'react-icons/ai';
 import '../static/sass/SassComponents/PrincipalCard.scss';
 
 class PrincipalCard extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     const styles = {
       margin: this.props.margin,

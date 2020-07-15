@@ -4,6 +4,9 @@ import PrincipalCard from './PrincipalCard';
 import '../static/sass/SassComponents/OtherAsteroid.scss';
 
 class LastAsteroids extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   cardContainer = [
     {
       diametrosAprox: 'Diametro aproximado',
