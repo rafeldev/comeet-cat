@@ -1,0 +1,8 @@
+.ApolloCardContainer {
+  width: 80%;
+  margin: 200px auto 0 auto;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 308px 308px 308px 308px;
+  gap: 10px;
+}

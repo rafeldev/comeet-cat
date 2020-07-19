@@ -1,12 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import './index.css';
 
-import App from "./entries/App";
+import App from './entries/App';
+
+const root = document.getElementById('root');
 
 ReactDOM.render(
-  <React.Fragment>
+  <BrowserRouter>
     <App />
-  </React.Fragment>,
-  document.getElementById("root")
+  </BrowserRouter>,
+
+  root
 );

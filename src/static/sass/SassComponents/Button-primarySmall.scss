@@ -7,6 +7,8 @@
   font-weight: 400;
   font-size: 14px;
   color: white;
+  font-weight: 600;
+  box-shadow: $box-shadow-low;
   @include button-primary-small;
   background-image: linear-gradient(to right, #7424c9, #c8377f, #febc78);
   border: none;

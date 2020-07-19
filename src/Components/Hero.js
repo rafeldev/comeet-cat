@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { ButtonPrimaryMedium } from './Buttons';
 import heroImg from '../img/heroImg.svg';
 
 import '../static/sass/SassComponents/Hero.scss';
 
 class Hero extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <div className='Hero__container'>
@@ -14,7 +17,7 @@ class Hero extends Component {
             la tierra listos para <br />
             que los descubras
           </h1>
-          <ButtonPrimaryMedium title='Descubrir Asteroides' />
+          <ButtonPrimaryMedium to='/AllAsteroid' title='Descubrir Asteroides' />
         </div>
         <div className='Container'>
           <div className='Hero__img'>

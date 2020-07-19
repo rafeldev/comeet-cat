@@ -1,7 +1,7 @@
 @import '../lib/mixin.scss';
 @import '../lib/variables.scss';
 
-.Data__container {
+.Data__container--Reverse {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -9,16 +9,16 @@
   width: 60%;
   height: 400px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
-.Data__container-text {
+.Data__container-text--Reverse {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.Data__text {
+.Data__text--Reverse {
   text-align: center;
 }
 span {

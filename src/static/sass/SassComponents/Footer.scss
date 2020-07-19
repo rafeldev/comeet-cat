@@ -1,5 +1,5 @@
-@import "../lib/variables.scss";
-@import "../lib/mixin.scss";
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
 
 .footer {
   display: flex;
@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: $extra-space 1fr $extra-space;
     max-width: 100%;
-    margin-top: $large-space;
+    /* margin-top: $large-space; */
     padding: $small-space;
     background-color: $primary-purple;
   }

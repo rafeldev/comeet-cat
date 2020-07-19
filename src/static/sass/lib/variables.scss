@@ -1,21 +1,21 @@
 /* ---------- Cunia-Font ----------  */
 
 @font-face {
-  font-family: "Cunia";
-  src: url("./fonts/cunia.eot"); /* IE9 Compat Modes */
-  src: url("./fonts/cunia.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/cunia.otf") format("opentype"),
-    url("./fonts/cunia.svg") format("svg"),
-    url("./fonts/cunia.ttf") format("truetype"),
-    url("./fonts/cunia.woff") format("woff"),
-    url("./fonts/cunia.woff2") format("woff2"); /* Modern Browsers */
+  font-family: 'Cunia';
+  src: url('./fonts/cunia.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/cunia.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/cunia.otf') format('opentype'),
+    url('./fonts/cunia.svg') format('svg'),
+    url('./fonts/cunia.ttf') format('truetype'),
+    url('./fonts/cunia.woff') format('woff'),
+    url('./fonts/cunia.woff2') format('woff2'); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 
 /* ---------- Montserrat-Font ----------  */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* ---------- Spaces ----------  */
 
@@ -32,7 +32,11 @@ $primary-yellow: #febc78;
 $primary-red: #ff5a6b;
 $primary-pink: #c8377f;
 $primary-purple: #7424c9;
+<<<<<<< HEAD
 $primary-white: #fff;
+=======
+$primary-white: #ffffff;
+>>>>>>> comeet-rafa
 
 /* ---------- Secondary-Colors ----------  */
 
@@ -57,8 +61,8 @@ $secondary-gradient: linear-gradient(
 
 /* ---------- Typography ----------  */
 
-$font-1: "Cunia";
-$font-2: "Montserrat", sans-serif;
+$font-1: 'Cunia';
+$font-2: 'Montserrat', sans-serif;
 
 /* ---------- Size-Typography ----------  */
 
@@ -76,7 +80,7 @@ $border-radius-small: 4px;
 
 /* ---------- box-shadow ----------  */
 
-$box-shadow-high: 4px 16px 32px 0px rgba(0, 0, 0, 0.1);
-$box-shadow-medium: 2px 8px 16px 0px rgba(0, 0, 0, 0.5);
-$box-shadow-low: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
-$box-shadow-small-low: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+$box-shadow-high: 4px 16px 32px 0px rgba(0, 0, 0, 1);
+$box-shadow-medium: 2px 8px 16px 0px rgba(0, 0, 0, 0.7);
+$box-shadow-low: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+$box-shadow-small-low: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
