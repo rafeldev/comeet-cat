@@ -1,42 +1,37 @@
-import React, { Component } from 'react';
-import TitlesInfo from './TitlesInfo';
-import PrincipalCard from './PrincipalCard';
+import React, { Component } from "react";
+import TitlesInfo from "./TitlesInfo";
+import PrincipalCard from "./PrincipalCard";
 
-import '../static/sass/SassComponents/LastAsteroid.scss';
+import "../static/sass/SassComponents/LastAsteroid.scss";
+
+import { neos } from "../neos.json";
 
 class LastAsteroids extends Component {
   render() {
     return (
-      <div className='Card'>
-        <div className='Container__title'>
+      <div className="Card">
+        <div className="Container__title">
           <TitlesInfo
-            to='/AllAsteroid'
-            title='Ultimos Asteroides'
-            description='Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. '
+            to="/AllAsteroid"
+            title="Ultimos Asteroides"
+            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. "
           />
         </div>
-        <div className='Card__principal'>
-          <PrincipalCard
-            diametrosAprox='Diametros aproximados'
-            title='Nombrel del Asteroide'
-            orbital='Ultimo avistamiento'
-            proximity='Proximidad a la tierra'
-            margin='0 16px 0 0'
-          />
-          <PrincipalCard
-            diametrosAprox='Diametros aproximados'
-            title='Nombrel del Asteroide'
-            orbital='Ultimo avistamiento'
-            proximity='Proximidad a la tierra'
-            margin='0 16px 0 0'
-          />
-          <PrincipalCard
-            diametrosAprox='Diametros aproximados'
-            title='Nombrel del Asteroide'
-            orbital='Ultimo avistamiento'
-            proximity='Proximidad a la tierra'
-            margin='0 16px 0 0'
-          />
+        <div className="Card__principal">
+          {neos.slice(0, 3).map((asteroids) => (
+            <PrincipalCard
+              key={asteroids.neo_reference_id}
+              diametrosAprox={
+                asteroids.estimated_diameter.kilometers.estimated_diameter_min
+              }
+              title={asteroids.name}
+              orbital={asteroids.close_approach_data.close_approach_date}
+              // proximity={
+              //   asteroids.orbital_data.orbit_class.orbit_class_description
+              // }
+              margin="0 16px 0 0"
+            />
+          ))}
         </div>
       </div>
     );
