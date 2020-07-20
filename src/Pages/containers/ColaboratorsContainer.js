@@ -3,7 +3,8 @@ import TitlesInfo from '../../Components/TitlesInfo';
 import ColaboratorCard from '../../Components/ColaboratorCard';
 import '../../static/sass/SassComponents/ColaboratorsContainer.scss';
 
-import imgRafa from '../../img/rafa.JPG'
+import imgRafa from '../../img/rafa2.jpg'
+import imgHector from '../../img/hector.jpg'
 
 class ColaboratorContainer extends Component {
   render() {
@@ -23,7 +24,7 @@ class ColaboratorContainer extends Component {
             name='Rafael Álvarez'
           />
           <ColaboratorCard
-            img={imgRafa}
+            img={imgHector}
             urlGithub='https://github.com/hectordevx'
             urlInstagram='https://www.instagram.com/hector___reyes/'
             title='Frontend Cosmonaut'
