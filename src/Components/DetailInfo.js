@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "../static/sass/SassComponents/AsteroidDetail.scss";
 import { ButtonPrimaryMedium } from "./Buttons";
 import Share from "./Share";
@@ -12,6 +13,9 @@ import {
 } from "react-icons/gi";
 
 class DetailInfo extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <div className="detail-info__container">
@@ -35,7 +39,7 @@ class DetailInfo extends Component {
             Tipo de Orbita:
           </li>
         </ul>
-        <ButtonPrimaryMedium>Details</ButtonPrimaryMedium>
+          <ButtonPrimaryMedium to="/Namin-Asteroid" title="Nombra tu asteroide"></ButtonPrimaryMedium>
         <Share />
       </div>
     );

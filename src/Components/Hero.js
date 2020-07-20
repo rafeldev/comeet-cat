@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component } from 'react';
 import { ButtonPrimaryMedium } from './Buttons';
 import heroImg from '../img/heroImg.svg';
 
