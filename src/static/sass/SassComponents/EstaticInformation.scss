@@ -1,11 +1,13 @@
-@import '../lib/variables.scss';
-@import '../lib/mixin.scss';
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
 
 .container {
-  margin-top: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
+  padding: 40px;
+  width: 70%;
   height: 243px;
   background-color: $primary-purple;
   border-radius: $nano-space;
@@ -44,7 +46,10 @@
 
 .Container__2 {
   margin-bottom: 50px;
+  width: 40%;
 }
 .Container__1 .Container__2 .Container__3 {
+  width: 30%;
   text-align: center;
+  padding: 40px;
 }

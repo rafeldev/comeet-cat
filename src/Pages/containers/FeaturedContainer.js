@@ -8,9 +8,18 @@ class FeaturedContainer extends Component {
     return (
       <div className="featured__grid">
         <div className="featured__container">
-          <Featured title="Featured 01" description="Descripción 01" />
-          <Featured title="Featured 02" description="Descripción 02" />
-          <Featured title="Featured 03" description="Descripción 03" />
+          <Featured
+            title="Visualiza"
+            description="La información de asteroides en nuestro sistema solar."
+          />
+          <Featured
+            title="Conoce"
+            description="Los asteroides cercanos a la tierra y potencialmente peligrosos."
+          />
+          <Featured
+            title="Nombra"
+            description="Tu asteroide favorito y genera un documento con el nombre elejido."
+          />
         </div>
       </div>
     );

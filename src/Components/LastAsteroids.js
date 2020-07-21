@@ -13,8 +13,8 @@ class LastAsteroids extends Component {
         <div className="Container__title">
           <TitlesInfo
             to="/AllAsteroid"
-            title="Ultimos Asteroides"
-            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. "
+            title="Últimos Asteroides"
+            description="Descubré los últimos asteroides descubiertos. "
           />
         </div>
         <div className="Card__principal">

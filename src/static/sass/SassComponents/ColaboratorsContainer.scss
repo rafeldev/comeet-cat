@@ -1,13 +1,15 @@
-@import '../lib/variables.scss';
-@import '../lib/mixin.scss';
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
 
 .colaborators-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   grid-column-start: 2;
-  margin-top: 100px;
+  margin: 80px auto;
+  max-width: 80%;
   &__grid {
     display: grid;
-    grid-template-columns: $extra-space 1fr $extra-space;
+    grid-template-columns: $large-space 1fr $large-space;
   }
 }

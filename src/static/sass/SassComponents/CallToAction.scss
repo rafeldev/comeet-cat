@@ -1,31 +1,35 @@
-@import '../lib/variables.scss';
-@import '../lib/mixin.scss';
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
 
 .cta {
   display: flex;
   flex-direction: row;
-  background-color: $primary-purple;
-  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  background: $secondary-gradient;
   border-radius: $nano-space;
   grid-column-start: 2;
+  width: 90%;
+  padding: 0;
+  margin: 0 auto;
   box-shadow: $box-shadow-medium;
   &__grid {
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 80px;
     display: grid;
-    grid-template-columns: $extra-space 1fr $extra-space;
+    grid-template-columns: $large-space 1fr $large-space;
   }
   &__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: $medium-space;
+    padding: $mini-space;
     max-width: 50%;
     h3 {
       font-family: $font-1;
       font-size: $font__size-h2;
       color: $primary-white;
+      margin: $nano-space 0;
     }
     p {
       font-family: $font-2;
@@ -34,6 +38,8 @@
     }
   }
   img {
-    max-width: 50%;
+    // position: absolute;
+    right: 0;
+    width: 400px;
   }
 }

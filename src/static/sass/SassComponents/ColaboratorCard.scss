@@ -1,5 +1,5 @@
-@import '../lib/variables.scss';
-@import '../lib/mixin.scss';
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
 
 .colaborator-card {
   display: flex;
@@ -7,7 +7,7 @@
   align-items: flex-start;
   flex-direction: column;
   border-radius: $border-radius;
-  width: 420px;
+  width: 30%;
   height: ($large-space * 3);
   padding: $mini-space;
   margin: $mini-space;
