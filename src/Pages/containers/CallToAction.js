@@ -15,7 +15,7 @@ class CallToAction extends Component {
               commodo ligula eget dolor.
             </p>
             <ButtonPrimaryMedium
-              to='/Naming-Asteroid'
+              to='/Namin-Asteroid'
               title='Descubrir asteroides'
             />
           </div>

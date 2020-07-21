@@ -7,6 +7,10 @@ class ColaboratorCard extends Component {
   render() {
     return (
       <div className='colaborator-card'>
+        <div className="photo__perfil">
+        <img src={this.props.img} />
+        </div>
+        <div className="Info">
         <h4 className='colaborator-card__title'>{this.props.title}</h4>
         <h2 className='colaborator-card__name'>{this.props.name}</h2>
         <div className='social-media__container'>
@@ -16,6 +20,7 @@ class ColaboratorCard extends Component {
           <a target='__blank' href={this.props.urlInstagram}>
             <AiOutlineInstagram color='white' size='2.5em' />
           </a>
+        </div>
         </div>
       </div>
     );

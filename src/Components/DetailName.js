@@ -7,7 +7,7 @@ class DetailName extends Component {
     return (
       <div className="detail-name__container">
         <img src={Asteroid} alt="" />
-        <h2>Nombre del Asteroide</h2>
+        <h2>{this.props.nameAsteroid}</h2>
       </div>
     );
   }

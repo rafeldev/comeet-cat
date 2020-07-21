@@ -9,9 +9,12 @@ import '../static/sass/SassComponents/Button-purpleSmall.scss';
 
 class ButtonPrimaryMedium extends Component {
   render() {
+    const styles = {
+      margin: this.props.margin,
+    };
     return (
       <Link to={this.props.to}>
-        <button className='button__primary-medium'>{this.props.title}</button>
+        <button style={styles} className='button__primary-medium'>{this.props.title}</button>
       </Link>
     );
   }
