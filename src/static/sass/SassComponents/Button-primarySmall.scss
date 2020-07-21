@@ -1,11 +1,11 @@
-@import '../lib/variables.scss';
-@import '../lib/mixin.scss';
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
 
 .button__primary-small {
   text-decoration: none;
   font-family: $font-2;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 16px;
   color: white;
   font-weight: 600;
   box-shadow: $box-shadow-low;

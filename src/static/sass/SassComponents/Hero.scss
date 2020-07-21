@@ -1,24 +1,39 @@
-@import '../lib/variables.scss';
-@import '../lib/mixin.scss';
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
 
-.Hero__container {
-  padding-top: 10px;
-  width: 80%;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-  display: flex;
-  justify-content: space-around;
+.Hero {
+  &__container {
+    padding-top: 10px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__title {
+    font-family: $font-1;
+    font-size: $font__size-h2;
+    color: $primary-white;
+  }
+
   &__text {
     width: 40%;
+    margin-left: 80px;
   }
-}
 
-.Hero__title {
-  font-family: $font-1;
-  font-size: $font__size-h2;
-  color: $primary-yellow;
+  &__img {
+    position: absolute;
+    display: flex;
+    //margin-left: 45px;
+    margin-left: -90px;
+    & img {
+      width: 480px;
+    }
+  }
 }
 
 .Container {
@@ -26,25 +41,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
 
-.Hero__img {
-  position: absolute;
-  display: flex;
-  //margin-left: 45px;
-  margin-left: 120px;
-}
-
-.Hero__img img {
-  width: 280px;
-}
-.Container__gradient {
-  width: 163px;
-  height: 278px;
-  //margin-left: auto;
-  margin-left: auto;
-  margin-right: 50px;
-  background: $primary-gradient;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow-medium;
+  &__gradient {
+    width: 363px;
+    height: 478px;
+    //margin-left: auto;
+    margin-left: auto;
+    margin-right: 50px;
+    background: $primary-gradient;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-medium;
+  }
 }

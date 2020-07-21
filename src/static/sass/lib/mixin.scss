@@ -42,19 +42,19 @@
 /* ---------- Buttons ----------  */
 
 @mixin button-primary-medium {
-  width: 200px;
-  height: 50px;
+  width: 320px;
+  height: 60px;
   border-radius: $border-radius;
   background: $primary-gradient;
 }
 @mixin button-secondary-medium {
-  width: 200px;
+  width: 240px;
   height: 50px;
   border-radius: $border-radius;
   background: $secondary-gradient;
 }
 @mixin button-purple-medium {
-  width: 200px;
+  width: 240px;
   height: 50px;
   border-radius: $border-radius;
   background: $primary-purple;
@@ -63,20 +63,20 @@
 /* ---------- small-Buttons ----------  */
 
 @mixin button-primary-small {
-  width: 140px;
-  height: 35px;
+  width: 180px;
+  height: 50px;
   border-radius: $border-radius-small;
   background: $primary-gradient;
 }
 @mixin button-secondary-small {
-  width: 140px;
-  height: 35px;
+  width: 180px;
+  height: 50px;
   border-radius: $border-radius-small;
   background: $secondary-gradient;
 }
 @mixin button-purple-small {
-  width: 140px;
-  height: 35px;
+  width: 160px;
+  height: 40px;
   border-radius: $border-radius-small;
   background: $primary-purple;
 }

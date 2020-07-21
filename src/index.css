@@ -1,18 +1,18 @@
 body {
   width: 100%;
   margin: 0 auto;
-  background-color: #1b2b3a;
+  background-color: #1a0b41;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .h2-prueba {
   margin-top: 150px;
   color: white;
-  font-family: 'Cunia', sans-serif;
+  font-family: "Cunia", sans-serif;
   font-size: 44px;
   text-align: center;
 }
