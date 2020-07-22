@@ -1,41 +1,33 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import CardImg from '../img/heroImg.svg';
-import { ButtonPurpleSmall } from './Buttons';
-import { TiWarning } from 'react-icons/ti';
-import { AiOutlineClockCircle } from 'react-icons/ai';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import '../static/sass/SassComponents/PrincipalCard.scss';
+import CardImg from "../img/heroImg.svg";
+import IconCardContainer from "./IconsCardContainer";
+
+import { ButtonPurpleSmall } from "./Buttons";
+import { TiWarning } from "react-icons/ti";
+
+import "../static/sass/SassComponents/PrincipalCard.scss";
 
 class PrincipalCard extends Component {
-  componentDidMount() {
-    window.scroll(0, 0);
-  }
   render() {
-    const styles = {
-      margin: this.props.margin,
-    };
     return (
-      <div style={styles} className='Card__container'>
-        <img className='Card__img' src={CardImg} alt='cardLogo' />
-        <div className='Card__text'>
-          <p className='diametro'>{this.props.diametrosAprox}</p>
+      <div className="Card__container">
+        <img className="Card__img" src={CardImg} alt="cardLogo" />
+        <div className="Card__text">
+          <p className="center">{this.props.diametrosAprox}</p>
           <hr />
+          <p>Nombre del Asteroide:</p>
           <h2>
             {this.props.title} <br />
           </h2>
-          <p className='ultimo__avistamieto'>{this.props.orbital}</p>
-          <div id='progressbar'>
-            <div></div>
-          </div>
-          <p className='proximidad'>{this.props.proximity}</p>
-          <div className='Card__footer'>
-            <div className='Card__footer--icons'>
-              <TiWarning size='32px' />
-              <AiOutlineClockCircle size='32px' />
+          <IconCardContainer date="01-07-2020" orbit="1284" proximity="13345" />
+          <div className="Card__footer">
+            <div className="Card__footer--icons">
+              <TiWarning size="40px" />
             </div>
-            <Link to='/Detail'>
-              <ButtonPurpleSmall margin=' 0 10px 0 0 ' title='Ver Detalles' />
+            <Link to="/Detail">
+              <ButtonPurpleSmall title="Ver Detalles" />
             </Link>
           </div>
         </div>
