@@ -30,8 +30,8 @@ function App() {
         <Route exact path='/Namin-Asteroid' component={NaminAsteroid} />
         <Route exact path='/not-found' component={NotFound} />
       </Switch>
-      {/* <ColaboratorsContainer />
-      <Footer /> */}
+      <ColaboratorsContainer />
+      <Footer />
     </BrowserRouter>
   );
 }
