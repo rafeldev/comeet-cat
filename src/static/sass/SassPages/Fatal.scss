@@ -1,0 +1,39 @@
+@import '../lib/mixin.scss';
+@import '../lib/variables.scss';
+
+.fatal__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 80%;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+.fatal__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25px;
+  h1 {
+    color: $primary-white;
+    font-size: $font__size-h1;
+    font-family: $font-1;
+  }
+  p {
+    margin-top: 0px;
+    font-weight: 500;
+    color: $primary-white;
+    font-size: $font__size-h2;
+    font-family: $font-2;
+  }
+  span {
+    color: $primary-white;
+    font-size: $font__size-h6;
+  }
+}
+.logo__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

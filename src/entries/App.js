@@ -11,6 +11,7 @@ import AsteroidesApollo from '../Pages/AsteroidesApollo';
 import AllAsteroid from '../Pages/AllAsteroid';
 import Details from '../Pages/Details';
 import NaminAsteroid from '../Pages/NaminAsteroid';
+import NotFound from '../Pages/NotFound';
 
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
@@ -26,9 +27,10 @@ function App() {
         <Route exact path='/AllAsteroid' component={AllAsteroid} />
         <Route exact path='/Detail' component={Details} />
         <Route exact path='/Namin-Asteroid' component={NaminAsteroid} />
+        <Route exact path='/not-found' component={NotFound} />
       </Switch>
-      <ColaboratorsContainer />
-      <Footer />
+      {/* <ColaboratorsContainer />
+      <Footer /> */}
     </BrowserRouter>
   );
 }
