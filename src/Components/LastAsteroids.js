@@ -20,9 +20,9 @@ const neos = graphql(gql`
       is_potentially_hazardous_asteroid
       close_approach_data {
         close_approach_date
-        miss_distance {
-          kilometers
-        }
+        # miss_distance {
+        #   kilometers
+        # }
       }
       orbital_data {
         orbital_period
