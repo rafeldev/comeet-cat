@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import { ButtonPrimaryMedium } from "./molecules/Buttons";
+import { ButtonPrimaryMedium } from "../molecules/Buttons";
 
-import "../static/sass/SassComponents/FormAsteroid.scss";
+import "../../static/sass/SassComponents/FormAsteroid.scss";
 
 class FormAsteroid extends Component {
   render() {

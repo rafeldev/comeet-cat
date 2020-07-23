@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 import Hero from "../Components/templates/Hero";
 import AllCardsContainer from "../Components/ApolloCardsContainer";
-import EstaticInformation from "../Pages/containers/EstaticInformation";
-import CertificateContainer from "./containers/CertificateContainer";
+import EstaticInformation from "../Components/templates/EstaticInformation";
+import CertificateContainer from "../Components/molecules/CertificateContainer";
 
 class AllAsteroid extends Component {
   render() {

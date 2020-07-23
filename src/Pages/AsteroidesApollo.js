@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Hero from "../Components/templates/Hero";
 import ApolloCardsContainer from "../Components/ApolloCardsContainer";
-import EstaticInformation from "../Pages/containers/EstaticInformation";
+import EstaticInformation from "../Components/templates/EstaticInformation";
 import CallToAction from "../Components/templates/CallToAction";
 
 class Home extends Component {

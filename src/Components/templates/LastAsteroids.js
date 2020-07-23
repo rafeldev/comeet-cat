@@ -1,8 +1,8 @@
 import React from "react";
-import TitlesInfo from "./organisms/TitlesInfo";
-import PrincipalCard from "./organisms/PrincipalCard";
+import TitlesInfo from "../organisms/TitlesInfo";
+import PrincipalCard from "../organisms/PrincipalCard";
 
-import "../static/sass/SassComponents/LastAsteroid.scss";
+import "../../static/sass/SassComponents/LastAsteroid.scss";
 
 export const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
   return (

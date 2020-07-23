@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import DetailName from "../Components/organisms/DetailName";
-import FormAsteroid from "../Components/FormAsteroid";
+import FormAsteroid from "../Components/organisms/FormAsteroid";
 
 import "../static/sass/SassComponents/FormAsteroid.scss";
 

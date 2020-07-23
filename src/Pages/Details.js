@@ -4,7 +4,7 @@ import DetailsContainer from "../Components/templates/DetailsContainer";
 import {
   DataTransformContainer,
   DataTransformContainerRowReverse,
-} from "../Components/DataTransformContainer";
+} from "../Components/templates/DataTransformContainer";
 import OtherAsteroids from "../Components/OtherAsteroids";
 
 class Home extends Component {
