@@ -17,7 +17,7 @@ _Thanks to those who worked on the project and made every effort to achieve the 
 
 ## API used
 
-- [NEO](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c38cedf3-300e-41ed-9522-7cde1905ff4f/DATA_API.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T005000Z&X-Amz-Expires=86400&X-Amz-Signature=99f8fa2e70c20f746a7325ff1eb0aa2fa1b1d56441538b3c92e4e17038066d61&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22DATA_API.pdf%22)
+- [NASA API Asteroids NeoWs](https://api.nasa.gov/)
 
 ## Help us to share
 
