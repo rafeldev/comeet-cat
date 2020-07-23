@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   background-image: url(./img/Fondo2.png);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #1a0b41;
 }
