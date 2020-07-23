@@ -11,17 +11,27 @@ import "../static/sass/SassComponents/PrincipalCard.scss";
 
 class PrincipalCard extends Component {
   render() {
+    console.log(
+      this.props.estimated_diameter.kilometers.estimated_diameter_max
+    );
     return (
       <div className="Card__container">
         <img className="Card__img" src={CardImg} alt="cardLogo" />
         <div className="Card__text">
-          <p className="center">{this.props.diametrosAprox}</p>
+          {/* <p className="center">
+            {this.props.estimated_diameter.kilometers.estimated_diameter_max}
+          </p> */}
+          <p className="center">{this.props.neo_reference_id}</p>
           <hr />
           <p>Nombre del Asteroide:</p>
           <h2>
-            {this.props.title} <br />
+            {this.props.name} <br />
           </h2>
-          <IconCardContainer date="01-07-2020" orbit="1284" proximity="13345" />
+          {/* <IconCardContainer
+            date={this.props.close_approach_data.close_approach_date}
+            orbit={this.props.orbital_data.orbital_period}
+            proximity={this.props.close_approach_data.miss_distance.kilometers}
+          /> */}
           <div className="Card__footer">
             <div className="Card__footer--icons">
               <TiWarning size="40px" />

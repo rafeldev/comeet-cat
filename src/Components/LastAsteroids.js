@@ -12,12 +12,26 @@ const neos = graphql(gql`
     getNeos {
       neo_reference_id
       name
+      estimated_diameter {
+        kilometers {
+          estimated_diameter_max
+        }
+      }
+      is_potentially_hazardous_asteroid
+      close_approach_data {
+        close_approach_date
+        miss_distance {
+          kilometers
+        }
+      }
+      orbital_data {
+        orbital_period
+      }
     }
   }
 `);
 
-const LastAsteroidsComponent = (props) => {
-  console.log(props);
+const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
   return (
     <div className="Card">
       <div className="Container__title">
@@ -28,8 +42,8 @@ const LastAsteroidsComponent = (props) => {
         />
       </div>
       <div className="Card__principal">
-        {[1, 2, 3].map((id) => (
-          <PrincipalCard key={id} id={id} />
+        {getNeos.slice(0, 3).map((neo) => (
+          <PrincipalCard key={neo.neo_reference_id} {...neo} />
         ))}
       </div>
     </div>
