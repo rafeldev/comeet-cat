@@ -18,7 +18,7 @@ const Fatal = () => {
         <span>Error code: 404 Not Found</span>
       </div>
       <div className='logo__container'>
-        <img src={FatalLogo} alt='Fatal logo' />
+        <img className='fatalLogo' src={FatalLogo} alt='Fatal logo' />
       </div>
     </div>
   );
