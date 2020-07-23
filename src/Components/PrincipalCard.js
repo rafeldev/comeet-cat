@@ -12,7 +12,8 @@ import "../static/sass/SassComponents/PrincipalCard.scss";
 class PrincipalCard extends Component {
   render() {
     // Nos devuelve undefined. Tal vez porque el close_approach_data devuelve un Array.
-    console.log(this.props.close_approach_data?.close_approach_date);
+    /* console.log(Array.isArray(this.props.close_approach_data)?this.props.close_approach_data[0] : null); */
+    
     return (
       <div className="Card__container">
         <img className="Card__img" src={CardImg} alt="cardLogo" />
@@ -34,16 +35,16 @@ class PrincipalCard extends Component {
           {
             <IconCardContainer
               date={
-                this.props.close_approach_data?.close_approach_date ? (
-                  this.props.close_approach_data?.close_approach_date
-                ) : (
-                  <p>Sin data</p>
-                )
+                //con el metodo isArray basicamente lo que hace es validar que sea una array y como solo tiene una propiedad le decimos que la busque en la posicion [0] y luego le pasamos la propiedad :D 
+                Array.isArray(this.props.close_approach_data)?this.props.close_approach_data[0].close_approach_date : null
               }
-              orbit={parseInt(this.props.orbital_data?.orbital_period, 10)}
+              //aca en orbit me di cuenta que en la tarjeta del centro me botaba NaN y lo que hice fue algo similar solo pregunte que si tiene la data entonces si reenderiza el parseInt y si no ps entonces ponle 0 :D 
+              orbit={this.props.orbital_data?.orbital_period?parseInt(this.props.orbital_data?.orbital_period, 0): 0}
+              
+              //en proximidad a la tierra por que devuelve 0km? :ojos: 
               proximity={parseInt(
                 this.props.close_approach_data?.miss_distance?.kilometers
-              )}
+              ), 0}
             />
           }
           <div className="Card__footer">
