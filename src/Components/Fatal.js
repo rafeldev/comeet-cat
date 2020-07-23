@@ -1,12 +1,13 @@
 import React from 'react';
 
 import FatalLogo from '../img/LogoFatal.svg';
-
-import '../static/sass/SassPages/Fatal.scss';
+import IconError from '../img/IconError.svg';
+import '../static/sass/SassComponents/Fatal.scss';
 
 const Fatal = () => {
   return (
     <div className='fatal__container'>
+      <img className='iconError' src={IconError} alt='' />
       <div className='fatal__text'>
         <h1>Ups..!</h1>
         <p>

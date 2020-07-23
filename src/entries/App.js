@@ -13,6 +13,7 @@ import Details from '../Pages/Details';
 import NaminAsteroid from '../Pages/NaminAsteroid';
 import NotFound from '../Pages/NotFound';
 
+/* Routes Statics */
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import ColaboratorsContainer from '../Pages/containers/ColaboratorsContainer';
