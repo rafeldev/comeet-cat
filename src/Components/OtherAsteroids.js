@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import PrincipalCard from './PrincipalCard';
+import React, { Component } from "react";
+import PrincipalCard from "./organisms/PrincipalCard";
 
-import '../static/sass/SassComponents/OtherAsteroid.scss';
+import "../static/sass/SassComponents/OtherAsteroid.scss";
 
 class LastAsteroids extends Component {
   componentDidMount() {
@@ -9,37 +9,37 @@ class LastAsteroids extends Component {
   }
   cardContainer = [
     {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
+      diametrosAprox: "Diametro aproximado",
+      title: "nombre del asteroide",
+      orbital: "orbita",
+      proximity: "Proximidad",
     },
     {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
+      diametrosAprox: "Diametro aproximado",
+      title: "nombre del asteroide",
+      orbital: "orbita",
+      proximity: "Proximidad",
     },
     {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
+      diametrosAprox: "Diametro aproximado",
+      title: "nombre del asteroide",
+      orbital: "orbita",
+      proximity: "Proximidad",
     },
     {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
+      diametrosAprox: "Diametro aproximado",
+      title: "nombre del asteroide",
+      orbital: "orbita",
+      proximity: "Proximidad",
     },
   ];
 
   render() {
     return (
-      <div className='Card'>
-        <div className='Card__principal'>
+      <div className="Card">
+        <div className="Card__principal">
           {this.cardContainer.map((card, index) => (
-            <PrincipalCard margin='0 16px 0 0' {...card} key={index} />
+            <PrincipalCard margin="0 16px 0 0" {...card} key={index} />
           ))}
         </div>
       </div>

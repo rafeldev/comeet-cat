@@ -1,37 +1,10 @@
 import React from "react";
-import TitlesInfo from "./TitlesInfo";
-import PrincipalCard from "./PrincipalCard";
+import TitlesInfo from "./organisms/TitlesInfo";
+import PrincipalCard from "./organisms/PrincipalCard";
 
 import "../static/sass/SassComponents/LastAsteroid.scss";
 
-import { graphql } from "react-apollo";
-import { gql } from "apollo-boost";
-
-const neos = graphql(gql`
-  query {
-    getNeos {
-      neo_reference_id
-      name
-      estimated_diameter {
-        kilometers {
-          estimated_diameter_max
-        }
-      }
-      is_potentially_hazardous_asteroid
-      close_approach_data {
-        close_approach_date
-        # miss_distance {
-        #   kilometers
-        # }
-      }
-      orbital_data {
-        orbital_period
-      }
-    }
-  }
-`);
-
-const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
+export const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
   return (
     <div className="Card">
       <div className="Container__title">
@@ -49,5 +22,3 @@ const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
     </div>
   );
 };
-
-export const LastAsteroids = neos(LastAsteroidsComponent);

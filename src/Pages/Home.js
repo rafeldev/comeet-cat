@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 
-import Hero from "../Components/Hero";
-import FeaturedContainer from "../Pages/containers/FeaturedContainer";
+import Hero from "../Components/templates/Hero";
+import FeaturedContainer from "../Components/templates/FeaturedContainer";
 import EstaticInformation from "../Pages/containers/EstaticInformation";
-import { LastAsteroids } from "../Components/LastAsteroids";
+import { LastAsteroids } from "../container/ListOfAsteroids";
 import CertificateContainer from "./containers/CertificateContainer";
-import ApolloAsteroid from "../Components/ApolloAsteroids";
-import CallToAction from "./containers/CallToAction";
-// import ColaboratorsContainer from "./containers/ColaboratorsContainer";
+import ApolloAsteroid from "../Components/templates/ApolloAsteroids";
+import CallToAction from "../Components/templates/CallToAction";
 
 import "../index.css";
 
@@ -22,7 +21,6 @@ class Home extends Component {
         <CertificateContainer />
         <ApolloAsteroid />
         <CallToAction />
-        {/* <ColaboratorsContainer /> */}
       </div>
     );
   }
