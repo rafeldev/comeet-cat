@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 /* styles */
-import "../../static/sass/SassComponents/Button-primaryMedium.scss";
-import "../../static/sass/SassComponents/Button-primarySmall.scss";
-import "../../static/sass/SassComponents/Button-purpleMedium.scss";
-import "../../static/sass/SassComponents/Button-purpleSmall.scss";
+import '../../static/sass/SassComponents/Button-primaryMedium.scss';
+import '../../static/sass/SassComponents/Button-primarySmall.scss';
+import '../../static/sass/SassComponents/Button-purpleMedium.scss';
+import '../../static/sass/SassComponents/Button-purpleSmall.scss';
 
 class ButtonPrimaryMedium extends Component {
   render() {
@@ -14,7 +14,7 @@ class ButtonPrimaryMedium extends Component {
     };
     return (
       <Link to={this.props.to}>
-        <button style={styles} className="button__primary-medium">
+        <button style={styles} className='button__primary-medium'>
           {this.props.title}
         </button>
       </Link>
@@ -24,7 +24,7 @@ class ButtonPrimaryMedium extends Component {
 class ButtonPrimarySmall extends Component {
   render() {
     return (
-      <button className="button__primary-small">{this.props.title}</button>
+      <button className='button__primary-small'>{this.props.title}</button>
     );
   }
 }
@@ -33,7 +33,7 @@ class ButtonPrimarySmall extends Component {
 class ButtonPurpleMedium extends Component {
   render() {
     return (
-      <button className="button__Purple-medium">{this.props.title}</button>
+      <button className='button__Purple-medium'>{this.props.title}</button>
     );
   }
 }
@@ -43,7 +43,7 @@ class ButtonPurpleSmall extends Component {
       margin: this.props.margin,
     };
     return (
-      <button style={styles} className="button__Purple-small">
+      <button style={styles} className='button__Purple-small'>
         {this.props.title}
       </button>
     );

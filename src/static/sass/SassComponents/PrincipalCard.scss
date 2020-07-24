@@ -1,11 +1,11 @@
-@import "../lib/variables.scss";
-@import "../lib/mixin.scss";
+@import '../lib/variables.scss';
+@import '../lib/mixin.scss';
 
 .Card {
   &__container {
     position: relative;
     min-height: 400px;
-    margin: 8px;
+    margin: 8px 8px 70px 8px;
     padding: 24px;
     min-width: 30%;
     background: $primary-gradient;

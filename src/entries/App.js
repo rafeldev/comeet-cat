@@ -12,7 +12,7 @@ import AllAsteroid from "../Pages/AllAsteroid";
 import Details from "../Pages/Details";
 import NaminAsteroid from "../Pages/NaminAsteroid";
 
-import Header from "../Components/Header";
+import Header from "../Components/organisms/Header";
 import Footer from "../Components/templates/Footer";
 import ColaboratorsContainer from "../Components/templates/ColaboratorsContainer";
 
