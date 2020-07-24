@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-/* 
-import CardImg from '../../img/heroImg.svg'; */
+
+/* import CardImg from '../../img/heroImg.svg'; */
+
 import IconCardContainer from '../molecules/IconsCardContainer';
 import { ButtonPurpleSmall } from '../molecules/Buttons';
 

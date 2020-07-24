@@ -1,16 +1,23 @@
 import React from 'react';
 import TitlesInfo from '../organisms/TitlesInfo';
 import PrincipalCard from '../organisms/PrincipalCard';
-/* import ImgData from '../../src/imgUrl.json'; */
-
+import ImgData from '../../imgUrl.json';
 import '../../static/sass/SassComponents/LastAsteroid.scss';
 
-export const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
-  //Esta es la funcion que quiero implementar en este componente funcional por medio de Hooks
-  /* const ponerImagenes = (neo, index) => {
+export const useLastAsteroid = (getNeos) => {
+  let arrayNeo = getNeos.slice(0, 3).map((neo) => {
     const id = Math.round(Math.random() * ImgData.length);
-    const imagen = ImgData[id];
-  }; */
+    neo.sourceimg = ImgData[id];
+
+    return neo;
+  });
+
+  return arrayNeo;
+};
+
+export const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
+  let cards = useLastAsteroid(getNeos);
+
   return (
     <div className='Card'>
       <div className='Container__title'>
@@ -21,8 +28,12 @@ export const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
         />
       </div>
       <div className='Card__principal'>
-        {getNeos.slice(0, 3).map((neo) => (
-          <PrincipalCard key={neo.neo_reference_id} {...neo} />
+        {cards.map((neo) => (
+          <PrincipalCard
+            imagen={neo.sourceimg}
+            key={neo.neo_reference_id}
+            {...neo}
+          />
         ))}
       </div>
     </div>
