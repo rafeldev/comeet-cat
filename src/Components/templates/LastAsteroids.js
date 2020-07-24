@@ -1,10 +1,16 @@
 import React from 'react';
 import TitlesInfo from '../organisms/TitlesInfo';
 import PrincipalCard from '../organisms/PrincipalCard';
+/* import ImgData from '../../src/imgUrl.json'; */
 
 import '../../static/sass/SassComponents/LastAsteroid.scss';
 
 export const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
+  //Esta es la funcion que quiero implementar en este componente funcional por medio de Hooks
+  /* const ponerImagenes = (neo, index) => {
+    const id = Math.round(Math.random() * ImgData.length);
+    const imagen = ImgData[id];
+  }; */
   return (
     <div className='Card'>
       <div className='Container__title'>
