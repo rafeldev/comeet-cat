@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Hero from '../Components/templates/Hero';
-import ApolloCardsContainer from '../Components/ApolloCardsContainer';
+import ApolloCardContainer from '../Components/ApolloCardContainer';
 import EstaticInformation from '../Components/templates/EstaticInformation';
 import CallToAction from '../Components/templates/CallToAction';
 
@@ -14,7 +14,7 @@ class Home extends Component {
       <div>
         <Hero />
         <h2 className='h2-prueba'>Asteroides Apollo</h2>
-        <ApolloCardsContainer />
+        <ApolloCardContainer />
         <EstaticInformation />
         <CallToAction />
       </div>
