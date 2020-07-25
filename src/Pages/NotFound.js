@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Fatal from '../Components/Fatal';
+import React, { Component } from "react";
+import Fatal from "../Components/templates/Fatal";
 
 //esta pagina solo era para visualizar el componente en su creacion toca borrarla :D
 class NotFound extends Component {

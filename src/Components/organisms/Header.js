@@ -21,11 +21,13 @@ class Header extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Astroides-Apollo">Asteroides Apollo</Link>
+              <Link to="/astroides-apollo">Asteroides Apollo</Link>
             </li>
-            <li>{/* <a href='#'>Team</a> */}</li>
+            <li>
+              <Link to="/asteroides">Ver todos</Link>
+            </li>
           </ul>
-          <a href="/">
+          <a href="https://github.com/rafeldev/comeet-cat" target="blank">
             <img className="Github__icon" src={GithubIcon} alt="" />
           </a>
         </div>
