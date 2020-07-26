@@ -22,7 +22,6 @@ export const ListOfApolloAsteroidsComponent = ({
   data: { getNeos = [] },
 } = {}) => {
   let cards = useLastAsteroid(getNeos);
-  // console.log(getNeos);
   return (
     <div className="Card">
       <div className="Container__title">
