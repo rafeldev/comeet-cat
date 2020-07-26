@@ -21,7 +21,7 @@ class Header extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/astroides-apollo">Asteroides Apollo</Link>
+              <Link to="/asteroides-apollo">Asteroides Apollo</Link>
             </li>
             <li>
               <Link to="/asteroides">Ver todos</Link>

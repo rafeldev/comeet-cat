@@ -24,24 +24,24 @@ class DetailInfo extends Component {
         <ul>
           <li>
             <GiRingedPlanet className="details-icon" size="1.2em" />
-            Diametro:
-          </li>
-          <li>
-            <GiThunderball className="details-icon" size="1.2em" />
-            Velocidad Relativa:
+            Diametro Estimado:
           </li>
           <li>
             <GiOrbit className="details-icon" size="1.2em" />
             Periodo Orbital:
           </li>
           <li>
+            <GiThunderball className="details-icon" size="1.2em" />
+            Más cercano a la tierra el:
+          </li>
+          <li>
             <GiOrbital className="details-icon" size="1.2em" />
-            Tipo de Orbita:
+            Proximidad a la tierra:
           </li>
         </ul>
         <ButtonPrimaryMedium
-          to="/Namin-Asteroid"
-          title="Nombra tu asteroide"
+          to="/nombrar-asteroide"
+          title="Nombra este asteroide"
         ></ButtonPrimaryMedium>
         <Share />
       </div>

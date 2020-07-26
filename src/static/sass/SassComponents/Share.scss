@@ -3,6 +3,7 @@
 
 .share-container {
   display: flex;
+  margin-top: 40px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -13,5 +14,11 @@
   }
   .icon {
     margin: $nano-space;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: $primary-yellow;
+    }
   }
 }

@@ -9,30 +9,35 @@ import "./App.css";
 import Home from "../Pages/Home";
 import AsteroidesApollo from "../Pages/AsteroidesApollo";
 import AllAsteroid from "../Pages/AllAsteroid";
-import Details from "../Pages/Details";
 import NaminAsteroid from "../Pages/NaminAsteroid";
 import NotFound from "../Pages/NotFound";
 
 import Header from "../Components/organisms/Header";
 import Footer from "../Components/templates/Footer";
 import ColaboratorsContainer from "../Components/templates/ColaboratorsContainer";
+import { DetailsContainer } from "../Components/templates/DetailsContainer";
 
-function App() {
+export const App = () => {
+  const urlParams = new window.URLSearchParams(window.location.search);
+  const detailId = urlParams.get("detalle");
+  // console.log(detailId);
+
   return (
     <BrowserRouter>
       <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/astroides-apollo" component={AsteroidesApollo} />
-        <Route exact path="/asteroides" component={AllAsteroid} />
-        <Route exact path="/detalle" component={Details} />
-        <Route exact path="/nombrar-asteroide" component={NaminAsteroid} />
-        <Route component={NotFound} />
-      </Switch>
+      {detailId ? (
+        <DetailsContainer id={detailId} />
+      ) : (
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/asteroides-apollo" component={AsteroidesApollo} />
+          <Route exact path="/asteroides" component={AllAsteroid} />
+          <Route exact path="/nombrar-asteroide" component={NaminAsteroid} />
+          <Route component={NotFound} />
+        </Switch>
+      )}
       <ColaboratorsContainer />
       <Footer />
     </BrowserRouter>
   );
-}
-
-export default App;
+};

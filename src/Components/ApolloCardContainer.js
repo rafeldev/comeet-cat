@@ -1,11 +1,12 @@
 import React from "react";
-import PrincipalCard from "./organisms/PrincipalCard";
 import ImgData from "../../src/imgUrl.json";
+
+import PrincipalCard from "./organisms/PrincipalCard";
 
 import "../static/sass/SassComponents/ApolloCardContainer.scss";
 
 export const useLastAsteroid = (getNeos) => {
-  let arrayNeo = getNeos.map((neo) => {
+  let arrayNeo = getNeos.slice(0, 20).map((neo) => {
     const id = Math.round(Math.random() * ImgData.length);
     neo.sourceimg = ImgData[id];
 
