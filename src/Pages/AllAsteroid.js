@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Hero from '../Components/templates/Hero';
-import AllCardContainer from '../Components/ApolloCardContainer';
-import EstaticInformation from '../Components/templates/EstaticInformation';
-import CertificateContainer from '../Components/molecules/CertificateContainer';
+import Hero from "../Components/templates/Hero";
+import { ListOfApollo } from "../container/AllApollo";
+import EstaticInformation from "../Components/templates/EstaticInformation";
+import CertificateContainer from "../Components/molecules/CertificateContainer";
 
 class AllAsteroid extends Component {
   componentDidMount() {
@@ -13,7 +13,7 @@ class AllAsteroid extends Component {
     return (
       <div>
         <Hero />
-        <AllCardContainer />
+        <ListOfApollo />
         <EstaticInformation />
         <CertificateContainer />
       </div>

@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Hero from '../Components/templates/Hero';
-import ApolloCardContainer from '../Components/ApolloCardContainer';
-import EstaticInformation from '../Components/templates/EstaticInformation';
-import CallToAction from '../Components/templates/CallToAction';
+import Hero from "../Components/templates/Hero";
+import { ListOfApollo } from "../container/AllApollo";
+import EstaticInformation from "../Components/templates/EstaticInformation";
+import CallToAction from "../Components/templates/CallToAction";
 
 class Home extends Component {
   componentDidMount() {
@@ -13,8 +13,8 @@ class Home extends Component {
     return (
       <div>
         <Hero />
-        <h2 className='h2-prueba'>Asteroides Apollo</h2>
-        <ApolloCardContainer />
+        <h2 className="h2-prueba">Asteroides Apollo</h2>
+        <ListOfApollo />
         <EstaticInformation />
         <CallToAction />
       </div>

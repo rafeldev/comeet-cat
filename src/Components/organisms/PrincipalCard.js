@@ -1,32 +1,32 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+// import { Link } from "react-router-dom";
 
 /* import CardImg from '../../img/heroImg.svg'; */
 
-import IconCardContainer from '../molecules/IconsCardContainer';
-import { ButtonPurpleSmall } from '../molecules/Buttons';
+import IconCardContainer from "../molecules/IconsCardContainer";
+import { ButtonPurpleSmall } from "../molecules/Buttons";
 
-import { TiWarning, TiWarningOutline } from 'react-icons/ti';
+import { TiWarning, TiWarningOutline } from "react-icons/ti";
 
-import '../../static/sass/SassComponents/PrincipalCard.scss';
+import "../../static/sass/SassComponents/PrincipalCard.scss";
 
 class PrincipalCard extends Component {
   render() {
     return (
-      <div className='Card__container'>
+      <div className="Card__container">
         <img
-          className='Card__img'
+          className="Card__img"
           src={this.props?.imagen?.url}
-          alt='cardLogo'
+          alt="cardLogo"
         />
 
-        <div className='Card__text'>
+        <div className="Card__text">
           {
-            <p className='center'>
+            <p className="center">
               Diametro Estimado: <br />
               {this.props.estimated_diameter?.kilometers?.estimated_diameter_max.toFixed(
                 2
-              )}{' '}
+              )}{" "}
               kms
             </p>
           }
@@ -57,17 +57,17 @@ class PrincipalCard extends Component {
               )}
             />
           }
-          <div className='Card__footer'>
-            <div className='Card__footer--icons'>
+          <div className="Card__footer">
+            <div className="Card__footer--icons">
               {this.props.is_potentially_hazardous_asteroid ? (
-                <TiWarning size='40px' />
+                <TiWarning size="40px" />
               ) : (
-                <TiWarningOutline size='40px' />
+                <TiWarningOutline size="40px" />
               )}
             </div>
-            <Link to='/Detail'>
-              <ButtonPurpleSmall title='Ver Detalles' />
-            </Link>
+            <a href={`/?detalle=${this.props.neo_reference_id}`}>
+              <ButtonPurpleSmall title="Ver Detalles" />
+            </a>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
-@import '../lib/variables.scss';
-@import '../lib/mixin.scss';
+@import "../lib/variables.scss";
+@import "../lib/mixin.scss";
 
 .footer {
   display: flex;
@@ -18,15 +18,24 @@
   &__social {
     width: 40%;
     h4 {
+      margin-top: 4px;
+      margin-bottom: 16px;
       font-family: $font-1;
       font-size: $font__size-h4;
+      color: $primary-white;
+    }
+    p {
+      margin-bottom: 4px;
+      font-family: $font-2;
+      font-size: $font__size-h6;
       color: $primary-white;
     }
   }
   &__project {
     text-align: right;
-    width: 40%;
+    width: 60%;
     img {
+      margin-bottom: 16px;
       padding: 8px;
       width: 200px;
     }
