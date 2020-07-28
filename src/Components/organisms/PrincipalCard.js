@@ -12,7 +12,6 @@ import "../../static/sass/SassComponents/PrincipalCard.scss";
 
 class PrincipalCard extends Component {
   render() {
-    console.log(this.props);
     return (
       <div className="Card__container">
         <img
@@ -70,7 +69,7 @@ class PrincipalCard extends Component {
                 <TiWarningOutline size="40px" />
               )}
             </div>
-            <a href={`/?detalle=${this.props.neo_reference_id}`}>
+            <a href={`/?detalle=${this.props._id}`}>
               <ButtonPurpleSmall title="Ver Detalles" />
             </a>
           </div>

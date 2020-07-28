@@ -7,8 +7,16 @@
   background-color: $secondary-purple;
   padding: $small-space;
   h2 {
+    margin-top: 4px;
     font-family: $font-1;
     font-size: $font__size-h2;
+    color: $primary-white;
+  }
+  h4 {
+    margin-bottom: 4px;
+    font-family: $font-2;
+    font-weight: 400;
+    font-size: $font__size-h6;
     color: $primary-white;
   }
   img {
@@ -24,7 +32,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: $small-space;
+  padding: $mini-space 0 $mini-space $mini-space;
   width: 50%;
   min-height: 100%;
   h3 {
@@ -40,9 +48,21 @@
     padding-inline-start: 0;
     color: $primary-white;
     li {
-      margin: $mini-space;
       display: flex;
       align-items: center;
+      margin: $mini-space;
+      font-family: $font-2;
+      font-weight: 300;
+      font-size: $font__size-h6;
+      color: $primary-white;
+      h3 {
+        display: block;
+        margin-top: 4px;
+        margin-left: 16px;
+        font-family: $font-1;
+        font-size: $font__size-h3;
+        color: $primary-white;
+      }
     }
   }
 }
@@ -67,6 +87,7 @@
   &-container {
     width: 100%;
     text-align: right;
+    margin-bottom: -60px;
   }
   &-icon {
     width: 40px;
