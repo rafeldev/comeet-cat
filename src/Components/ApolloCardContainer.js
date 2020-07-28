@@ -1,9 +1,9 @@
-import React from "react";
-import ImgData from "../../src/imgUrl.json";
+import React from 'react';
+import ImgData from '../../src/imgUrl.json';
 
-import PrincipalCard from "./organisms/PrincipalCard";
+import PrincipalCard from './organisms/PrincipalCard';
 
-import "../static/sass/SassComponents/ApolloCardContainer.scss";
+import '../static/sass/SassComponents/ApolloCardContainer.scss';
 
 export const useLastAsteroid = (getNeos) => {
   let arrayNeo = getNeos.slice(0, 20).map((neo) => {
@@ -19,7 +19,7 @@ export const useLastAsteroid = (getNeos) => {
 export const ApolloCardContainer = ({ data: { getNeos = [] } } = {}) => {
   let cards = useLastAsteroid(getNeos);
   return (
-    <div className="ApolloCardContainer">
+    <div className='ApolloCardContainer'>
       {cards.map((neo) => (
         <PrincipalCard
           imagen={neo.sourceimg}
