@@ -3,6 +3,8 @@ import "../../static/sass/SassComponents/AsteroidDetail.scss";
 import heroImg from "../../img/heroImg.svg";
 
 class DetailName extends Component {
+
+
   render() {
     return (
       <div className="detail-name__container">
