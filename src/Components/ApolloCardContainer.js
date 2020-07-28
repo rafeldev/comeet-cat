@@ -1,73 +1,32 @@
-import React, { Component } from 'react';
-import PrincipalCard from './organisms/PrincipalCard';
-import ImgData from '../../src/imgUrl.json';
+import React from "react";
+import ImgData from "../../src/imgUrl.json";
 
-import '../static/sass/SassComponents/ApolloCardContainer.scss';
+import PrincipalCard from "./organisms/PrincipalCard";
 
-class ApolloCardContainer extends Component {
-  cardContainer = [
-    {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
-    },
-    {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
-    },
-    {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
-    },
-    {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
-    },
-    {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
-    },
-    {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
-    },
-    {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
-    },
-    {
-      diametrosAprox: 'Diametro aproximado',
-      title: 'nombre del asteroide',
-      orbital: 'orbita',
-      proximity: 'Proximidad',
-    },
-  ];
-  ponerImagenes = (card, index) => {
+import "../static/sass/SassComponents/ApolloCardContainer.scss";
+
+export const useLastAsteroid = (getNeos) => {
+  let arrayNeo = getNeos.slice(0, 20).map((neo) => {
     const id = Math.round(Math.random() * ImgData.length);
-    const imagen = ImgData[id];
-    return <PrincipalCard imagen={imagen} {...card} key={index} />;
-  };
-  render() {
-    console.log('Hola');
-    return (
-      <div className='ApolloCardContainer'>
-        {this.cardContainer.map((card, index) => this.ponerImagenes())}
-      </div>
-    );
-  }
-}
+    neo.sourceimg = ImgData[id];
 
-export default ApolloCardContainer;
+    return neo;
+  });
+
+  return arrayNeo;
+};
+
+export const ApolloCardContainer = ({ data: { getNeos = [] } } = {}) => {
+  let cards = useLastAsteroid(getNeos);
+  return (
+    <div className="ApolloCardContainer">
+      {cards.map((neo) => (
+        <PrincipalCard
+          imagen={neo.sourceimg}
+          key={neo.neo_reference_id}
+          {...neo}
+        />
+      ))}
+    </div>
+  );
+};

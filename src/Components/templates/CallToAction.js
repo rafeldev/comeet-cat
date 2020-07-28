@@ -17,7 +17,7 @@ class CallToAction extends Component {
               variedad de ellos y descarga tu documento.
             </p>
             <ButtonPrimaryMedium
-              to="/Namin-Asteroid"
+              to="/asteroides"
               title="Descubrir asteroides"
             />
           </div>

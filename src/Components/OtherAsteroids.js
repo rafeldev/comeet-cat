@@ -1,50 +1,34 @@
-import React, { Component } from "react";
+import React from "react";
+import ImgData from "../../src/imgUrl.json";
+
 import PrincipalCard from "./organisms/PrincipalCard";
 
 import "../static/sass/SassComponents/OtherAsteroid.scss";
 
-class LastAsteroids extends Component {
-  componentDidMount() {
-    window.scroll(0, 0);
-  }
-  cardContainer = [
-    {
-      diametrosAprox: "Diametro aproximado",
-      title: "nombre del asteroide",
-      orbital: "orbita",
-      proximity: "Proximidad",
-    },
-    {
-      diametrosAprox: "Diametro aproximado",
-      title: "nombre del asteroide",
-      orbital: "orbita",
-      proximity: "Proximidad",
-    },
-    {
-      diametrosAprox: "Diametro aproximado",
-      title: "nombre del asteroide",
-      orbital: "orbita",
-      proximity: "Proximidad",
-    },
-    {
-      diametrosAprox: "Diametro aproximado",
-      title: "nombre del asteroide",
-      orbital: "orbita",
-      proximity: "Proximidad",
-    },
-  ];
+export const useLastAsteroid = (getNeos) => {
+  let arrayNeo = getNeos.slice(3, 7).map((neo) => {
+    const id = Math.round(Math.random() * ImgData.length);
+    neo.sourceimg = ImgData[id];
 
-  render() {
-    return (
-      <div className="Card">
-        <div className="Card__principal">
-          {this.cardContainer.map((card, index) => (
-            <PrincipalCard margin="0 16px 0 0" {...card} key={index} />
-          ))}
-        </div>
+    return neo;
+  });
+
+  return arrayNeo;
+};
+
+export const OtherAsteroids = ({ data: { getNeos = [] } } = {}) => {
+  let cards = useLastAsteroid(getNeos);
+  return (
+    <div className="Card">
+      <div className="Card__principal">
+        {cards.map((neo) => (
+          <PrincipalCard
+            imagen={neo.sourceimg}
+            key={neo.neo_reference_id}
+            {...neo}
+          />
+        ))}
       </div>
-    );
-  }
-}
-
-export default LastAsteroids;
+    </div>
+  );
+};
