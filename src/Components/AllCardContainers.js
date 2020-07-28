@@ -1,17 +1,11 @@
-import  { useState } from 'react';
 
 import PrincipalCard from './organisms/PrincipalCard';
-import {ButtonPrimarySmall} from '../Components/molecules/Buttons'
 import ImgData from '../../src/imgUrl.json';
 
 import '../static/sass/SassComponents/ApolloCardContainer.scss';
 
-const INITIAL_PAGE = 0
 
 export const useLastAsteroid = (getNeos) => {
-
-  const [page, setPage] = useState(INITIAL_PAGE);
-
 
   let arrayNeo = getNeos.slice(0, 20).map((neo) => {
     const id = Math.round(Math.random() * ImgData.length);
@@ -35,7 +29,6 @@ export const ApolloCardContainer = ({ data: { getNeos = [] } } = {}) => {
           {...neo}
         />
       ))}
-      <ButtonPrimarySmall title='ver màs' />
     </div>
   );
 }  ;
