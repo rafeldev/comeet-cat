@@ -5,6 +5,7 @@ import { gql } from "apollo-boost";
 export const neos = graphql(gql`
   query {
     getNeos {
+      _id
       neo_reference_id
       name
       estimated_diameter {

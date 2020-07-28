@@ -37,11 +37,13 @@ class PrincipalCard extends Component {
           </h2>
           {
             <IconCardContainer
+              // Preguntamos por la data para desplegarla o enviar mensaje de error.
               date={
-                //Con el metodo isArray validamos que sea una arraytraemos la [0] y luego la propiedad con el dato necesario.
-                Array.isArray(this.props.close_approach_data)
-                  ? this.props.close_approach_data[0].close_approach_date
-                  : null
+                this.props.close_approach_data.close_approach_date ? (
+                  this.props.close_approach_data.close_approach_date
+                ) : (
+                  <p>Sin fecha definida</p>
+                )
               }
               //Preguntamos si tiene la data entonces reenderiza el parseInt y si no le asigna 0.
               orbit={
@@ -49,11 +51,13 @@ class PrincipalCard extends Component {
                   ? parseInt(this.props.orbital_data?.orbital_period, 0)
                   : 0
               }
-              //Preguntamos por la data del Array y lo parseamos a entero.
+              // Preguntamos si la data existe para desplegarla o pasar un mensaje de error. Convertimos el string a entero.
               proximity={parseInt(
-                Array.isArray(this.props.close_approach_data)
-                  ? this.props.close_approach_data[0].miss_distance?.kilometers
-                  : null
+                this.props.close_approach_data ? (
+                  this.props.close_approach_data.miss_distance?.kilometers
+                ) : (
+                  <p>No hay distancia definida</p>
+                )
               )}
             />
           }
@@ -65,7 +69,7 @@ class PrincipalCard extends Component {
                 <TiWarningOutline size="40px" />
               )}
             </div>
-            <a href={`/?detalle=${this.props.neo_reference_id}`}>
+            <a href={`/?detalle=${this.props._id}`}>
               <ButtonPurpleSmall title="Ver Detalles" />
             </a>
           </div>
