@@ -15,9 +15,11 @@ import orbita from "../../img/orbita.png";
 import { gql } from "apollo-boost";
 import { Query } from "react-apollo";
 
+
 const query = gql`
   query($id: ID!) {
-    getNeos(neo_reference_id: $id) {
+    getNeo(id: $id) {
+      _id
       neo_reference_id
       name
       estimated_diameter {
@@ -40,27 +42,30 @@ const query = gql`
 `;
 
 export const DetailsContainer = ({ id }) => {
+
+
   return (
     <Query query={query} variables={{ id }}>
       {({ loading, error, data }) => {
         if (loading) return null;
-        /* console.log(data); */
+        console.log(data);
+        const { getNeo = {} } = data;
 
         return (
           <Fragment>
             <div className="details-container">
-              <DetailName />
-              <DetailInfo />
+              <DetailName {...getNeo} />
+              <DetailInfo {...getNeo} />
             </div>
 
             <div className="Data__container">
               <div className="Data__text">
                 <DataTransformInfo
                   question="¿Qué tan grande es?"
-                  newData="30"
                   description="El tamaño de un transbordador espacial de 56m"
                   info="Su diametro es de"
-                  dataValue="3452"
+                  {...getNeo.estimated_diameter?.kilometers
+                    ?.estimated_diameter_max}
                 />
               </div>
               <img src={diametro} alt="Illustaración de Comparación" />

@@ -20,7 +20,6 @@ import { DetailsContainer } from "../Components/templates/DetailsContainer";
 export const App = () => {
   const urlParams = new window.URLSearchParams(window.location.search);
   const detailId = urlParams.get("detalle");
-  // console.log(detailId);
 
   return (
     <BrowserRouter>

@@ -18,7 +18,7 @@ class Share extends Component {
           href="https://twitter.com/intent/tweet?text=Descubre%20Comeet%20Cat.%20Una%20aplicacion%20de%20visualizacion%20de%20asteroides.%20https://github.com/rafeldev/comeet-cat"
           target="blank"
         >
-          <FaTwitterSquare classname="icon" size="2em" />
+          <FaTwitterSquare className="icon" size="2em" />
         </a>
       </div>
     );

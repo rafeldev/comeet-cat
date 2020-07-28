@@ -15,7 +15,7 @@ class Hero extends Component {
             que los descubras
           </h1>
           <ButtonPrimaryMedium
-            to={this.props.buttonUrl}
+            to='/asteroides'
             title="Descubrir más asteroides"
           />
         </div>
