@@ -1,14 +1,14 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react';
 
-import DetailName from "../organisms/DetailName";
-import DetailInfo from "../organisms/DetailInfo";
-import DetailsTransform from "../organisms/DetailsTransform";
-import { OtherAsteroidsWithQuery } from "../../container/OtherAsteroids";
+import DetailName from '../organisms/DetailName';
+import DetailInfo from '../organisms/DetailInfo';
+import DetailsTransform from '../organisms/DetailsTransform';
+import { OtherAsteroidsWithQuery } from '../../container/OtherAsteroids';
 
-import "../../static/sass/SassComponents/AsteroidDetail.scss";
+import '../../static/sass/SassComponents/AsteroidDetail.scss';
 
-import { gql } from "apollo-boost";
-import { Query } from "react-apollo";
+import { gql } from 'apollo-boost';
+import { Query } from 'react-apollo';
 
 const query = gql`
   query($id: ID!) {
@@ -40,17 +40,17 @@ export const DetailsContainer = ({ id }) => {
     <Query query={query} variables={{ id }}>
       {({ loading, error, data }) => {
         if (loading) return null;
-        console.log(data);
         const { getNeo = {} } = data;
+        debugger;
 
         return (
           <Fragment>
-            <div className="details-container">
+            <div className='details-container'>
               <DetailName {...getNeo} />
               <DetailInfo {...getNeo} />
             </div>
             <DetailsTransform {...getNeo} />
-            <h2 className="h2-prueba">Otros Asteroides</h2>
+            <h2 className='h2-prueba'>Otros Asteroides</h2>
             <OtherAsteroidsWithQuery />
           </Fragment>
         );
