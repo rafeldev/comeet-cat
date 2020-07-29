@@ -1,32 +1,47 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // import { Link } from "react-router-dom";
 
 /* import CardImg from '../../img/heroImg.svg'; */
 
-import IconCardContainer from "../molecules/IconsCardContainer";
-import { ButtonPurpleSmall } from "../molecules/Buttons";
+import IconCardContainer from '../molecules/IconsCardContainer';
+import { ButtonPurpleSmall } from '../molecules/Buttons';
 
-import { TiWarning, TiWarningOutline } from "react-icons/ti";
+import { TiWarning, TiWarningOutline } from 'react-icons/ti';
 
-import "../../static/sass/SassComponents/PrincipalCard.scss";
+import '../../static/sass/SassComponents/PrincipalCard.scss';
 
 class PrincipalCard extends Component {
+  //declaro el estado como un objeto vacio
+  constructor() {
+    super();
+    this.state = { imagen: {} };
+  }
+
+  //traigo la informacion del JSON desde el local storage ubicado en la App.js
+  imgData = JSON.parse(localStorage.getItem('IMG_DATA'));
+
+  componentDidMount() {
+    const id = Math.round(Math.random() * this.imgData.length);
+    const index = id === this.imgData.length ? id - 1 : id;
+    this.setState({ imagen: this.imgData[index] });
+  }
+
   render() {
     return (
-      <div className="Card__container">
+      <div className='Card__container'>
         <img
-          className="Card__img"
-          src={this.props?.imagen?.url}
-          alt="cardLogo"
+          className='Card__img'
+          src={this.state.imagen?.url}
+          alt='cardLogo'
         />
 
-        <div className="Card__text">
+        <div className='Card__text'>
           {
-            <p className="center">
+            <p className='center'>
               Diametro Estimado: <br />
               {this.props.estimated_diameter?.kilometers?.estimated_diameter_max.toFixed(
                 2
-              )}{" "}
+              )}{' '}
               kms
             </p>
           }
@@ -61,16 +76,16 @@ class PrincipalCard extends Component {
               )}
             />
           }
-          <div className="Card__footer">
-            <div className="Card__footer--icons">
+          <div className='Card__footer'>
+            <div className='Card__footer--icons'>
               {this.props.is_potentially_hazardous_asteroid ? (
-                <TiWarning size="40px" />
+                <TiWarning size='40px' />
               ) : (
-                <TiWarningOutline size="40px" />
+                <TiWarningOutline size='40px' />
               )}
             </div>
             <a href={`/?detalle=${this.props._id}`}>
-              <ButtonPurpleSmall title="Ver Detalles" />
+              <ButtonPurpleSmall title='Ver Detalles' />
             </a>
           </div>
         </div>
