@@ -34,11 +34,7 @@ export const ListOfApolloAsteroidsComponent = ({
       </div>
       <div className='Card__principal'>
         {cards.map((neo) => (
-          <PrincipalCard
-            imagen={neo.sourceimg}
-            key={neo.neo_reference_id}
-            {...neo}
-          />
+          <PrincipalCard key={neo.neo_reference_id} {...neo} />
         ))}
       </div>
     </div>

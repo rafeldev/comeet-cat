@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import ImgData from '../../src/imgUrl.json';
+import React, { useState, useEffect } from 'react';
 import Paginator from 'react-hooks-paginator';
 
 import PrincipalCard from './organisms/PrincipalCard';
@@ -7,24 +6,21 @@ import PrincipalCard from './organisms/PrincipalCard';
 import '../static/sass/SassComponents/ApolloCardContainer.scss';
 import '../../node_modules/bootstrap-less/bootstrap/bootstrap.less';
 
-export const useLastAsteroid = (getNeos) => {
-  let arrayNeo = getNeos.slice(0, 20).map((neo) => {
-    const id = Math.round(Math.random() * ImgData.length);
-    neo.sourceimg = ImgData[id];
-
-    return neo;
-  });
-
-  return arrayNeo;
-};
-
 export const ApolloCardContainer = ({ data: { getNeos = [] } } = {}) => {
+  const [cards, setCards] = useState([]);
   const [offset, setOffset] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
 
-  let cards = useLastAsteroid(getNeos);
+  const neo = getNeos;
 
-  const data = [1, 2, 3, 4, 5, 6];
+  const pageLimit = 20;
+
+  useEffect(() => {
+    setCards(neo.slice(offset, offset + pageLimit));
+  }, [offset, neo]);
+
+  console.log(neo.length);
+
   return (
     <div className='ApolloCardContainer'>
       {cards.map((neo) => (
@@ -35,8 +31,8 @@ export const ApolloCardContainer = ({ data: { getNeos = [] } } = {}) => {
         />
       ))}
       <Paginator
-        totalRecords={data.length}
-        pageLimit={4}
+        totalRecords={neo.length}
+        pageLimit={pageLimit}
         pageNeighbours={1}
         setOffset={setOffset}
         currentPage={currentPage}
