@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 import DetailName from '../organisms/DetailName';
 import DetailInfo from '../organisms/DetailInfo';
