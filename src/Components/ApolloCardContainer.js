@@ -2,22 +2,37 @@ import React, { useState, useEffect } from 'react';
 import Paginator from 'react-hooks-paginator';
 
 import PrincipalCard from './organisms/PrincipalCard';
+import FilterContext from '../Pages/FilterContext';
 
 import '../static/sass/SassComponents/ApolloCardContainer.scss';
 import '../../node_modules/bootstrap-less/bootstrap/bootstrap.less';
+import { useContext } from 'react';
 
 export const ApolloCardContainer = ({ data: { getNeos = [] } } = {}) => {
   const [cards, setCards] = useState([]);
   const [offset, setOffset] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+  const [neo, setNeo] = useState([]);
 
-  const neo = getNeos;
+  const filter = useContext(FilterContext);
 
   const pageLimit = 20;
 
   useEffect(() => {
     setCards(neo.slice(offset, offset + pageLimit));
   }, [offset, neo]);
+
+  useEffect(() => {
+    let neo = [];
+    if (filter) {
+      neo = getNeos.filter(
+        (item) => item.is_potentially_hazardous_asteroid === filter
+      );
+    } else {
+      neo = getNeos;
+    }
+    setNeo(neo);
+  }, [getNeos]);
 
   console.log(neo.length);
 
