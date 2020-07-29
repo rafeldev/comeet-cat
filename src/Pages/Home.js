@@ -17,7 +17,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Hero buttonUrl="/asteroides" />
+        <Hero />
         <FeaturedContainer />
         <EstaticInformation />
         <LastAsteroids />

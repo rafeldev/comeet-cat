@@ -15,6 +15,7 @@ import orbita from "../../img/orbita.png";
 import { gql } from "apollo-boost";
 import { Query } from "react-apollo";
 
+
 const query = gql`
   query($id: ID!) {
     getNeo(id: $id) {
@@ -41,6 +42,8 @@ const query = gql`
 `;
 
 export const DetailsContainer = ({ id }) => {
+
+
   return (
     <Query query={query} variables={{ id }}>
       {({ loading, error, data }) => {
