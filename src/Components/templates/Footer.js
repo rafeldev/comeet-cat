@@ -13,7 +13,10 @@ class Footer extends Component {
             <p>Proyecto creado en:</p>
             <h4>Platzi Master</h4>
             <p>Tu feedback es muy importante para nosotros:</p>
-            <ButtonPrimaryMedium title="Dar Feedback"></ButtonPrimaryMedium>
+            <ButtonPrimaryMedium
+              title="Dar Feedback"
+              to=""
+            ></ButtonPrimaryMedium>
           </div>
           <div className="footer__project">
             <img src={ComeetLogo} alt="Logo del header" />
