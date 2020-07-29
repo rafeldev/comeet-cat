@@ -13,14 +13,7 @@ class Footer extends Component {
             <p>Proyecto creado en:</p>
             <h4>Platzi Master</h4>
             <p>Tu feedback es muy importante para nosotros:</p>
-<<<<<<< HEAD
-            <ButtonPrimaryMedium
-              title="Dar Feedback"
-              to=""
-            ></ButtonPrimaryMedium>
-=======
-            <ButtonPrimaryMedium to='/' title="Dar Feedback" />
->>>>>>> 16f7de43899deae9bb98b099d4574c4e4d80df41
+            <ButtonPrimaryMedium to="/" title="Dar Feedback" />
           </div>
           <div className="footer__project">
             <img src={ComeetLogo} alt="Logo del header" />

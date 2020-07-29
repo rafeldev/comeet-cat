@@ -30,7 +30,7 @@ class DetailInfo extends Component {
         <ul>
           <li>
             <GiRingedPlanet className="details-icon" size="1.2em" />
-            Diametro Estimado:
+            Diámetro Estimado:
             <br />
             <h3>
               {this.props.estimated_diameter?.kilometers?.estimated_diameter_max.toFixed(

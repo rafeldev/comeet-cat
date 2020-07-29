@@ -2,19 +2,13 @@ import React, { Fragment } from "react";
 
 import DetailName from "../organisms/DetailName";
 import DetailInfo from "../organisms/DetailInfo";
-import DataTransformInfo from "./DataTransformInfo";
+import DetailsTransform from "../organisms/DetailsTransform";
 import { OtherAsteroidsWithQuery } from "../../container/OtherAsteroids";
 
 import "../../static/sass/SassComponents/AsteroidDetail.scss";
-import "../../static/sass/SassComponents/DataTransformContainer.scss";
-
-import diametro from "../../img/diametro.png";
-import distancia from "../../img/distancia.png";
-import orbita from "../../img/orbita.png";
 
 import { gql } from "apollo-boost";
 import { Query } from "react-apollo";
-
 
 const query = gql`
   query($id: ID!) {
@@ -42,8 +36,6 @@ const query = gql`
 `;
 
 export const DetailsContainer = ({ id }) => {
-
-
   return (
     <Query query={query} variables={{ id }}>
       {({ loading, error, data }) => {
@@ -57,45 +49,7 @@ export const DetailsContainer = ({ id }) => {
               <DetailName {...getNeo} />
               <DetailInfo {...getNeo} />
             </div>
-
-            <div className="Data__container">
-              <div className="Data__text">
-                <DataTransformInfo
-                  question="¿Qué tan grande es?"
-                  description="El tamaño de un transbordador espacial de 56m"
-                  info="Su diametro es de"
-                  {...getNeo.estimated_diameter?.kilometers
-                    ?.estimated_diameter_max}
-                />
-              </div>
-              <img src={diametro} alt="Illustaración de Comparación" />
-            </div>
-
-            <div className="Data__container--Reverse">
-              <div className="Data__text">
-                <DataTransformInfo
-                  question="¿Cuánto tarda en dar una vuelta al sol?"
-                  newData="16"
-                  description="Más que la tierra con sus 365 días."
-                  info="Su periodo orbital es de "
-                  dataValue="25546211"
-                />
-              </div>
-              <img src={orbita} alt="Illustaración de Comparación" />
-            </div>
-
-            <div className="Data__container">
-              <div className="Data__text">
-                <DataTransformInfo
-                  question="¿Qué tan lejos está de la tierra?"
-                  newData="67"
-                  description="La distancia de la tierra a la luna, son 384,400 kms  "
-                  info="La distancia es de "
-                  dataValue="25546211"
-                />
-              </div>
-              <img src={distancia} alt="Illustaración de Comparación" />
-            </div>
+            <DetailsTransform {...getNeo} />
             <h2 className="h2-prueba">Otros Asteroides</h2>
             <OtherAsteroidsWithQuery />
           </Fragment>
