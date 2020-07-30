@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import TitlesInfo from '../organisms/TitlesInfo';
-import PrincipalCard from '../organisms/PrincipalCard';
+import TitlesInfo from "../organisms/TitlesInfo";
+import PrincipalCard from "../organisms/PrincipalCard";
 
-import '../../static/sass/SassComponents/LastAsteroid.scss';
+import "../../static/sass/SassComponents/LastAsteroid.scss";
 
-import ImgData from '../../imgUrl.json';
+import ImgData from "../../imgUrl.json";
 
 export const useLastAsteroid = (getNeos) => {
   let arrayNeo = getNeos.slice(4, 7).map((neo) => {
@@ -24,15 +24,16 @@ export const ListOfApolloAsteroidsComponent = ({
   let cards = useLastAsteroid(getNeos);
   console.log(getNeos);
   return (
-    <div className='Card'>
-      <div className='Container__title'>
+    <div className="Card">
+      <div className="Container__title">
         <TitlesInfo
-          to='/asteroides-apollo'
-          title='Asteroides Apollo'
-          description='Asteroides que cruzan con la órbita de la tierra y son potencialmente peligrosos. '
+          value="Ver Asteroides"
+          to="/asteroides-apollo"
+          title="Asteroides Apollo"
+          description="Asteroides que cruzan con la órbita de la tierra y son potencialmente peligrosos. "
         />
       </div>
-      <div className='Card__principal'>
+      <div className="Card__principal">
         {cards.map((neo) => (
           <PrincipalCard key={neo.neo_reference_id} {...neo} />
         ))}

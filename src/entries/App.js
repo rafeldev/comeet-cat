@@ -9,7 +9,7 @@ import './App.css';
 import Home from '../Pages/Home';
 import AsteroidesApollo from '../Pages/AsteroidesApollo';
 import AllAsteroid from '../Pages/AllAsteroid';
-import NaminAsteroid from '../Pages/NaminAsteroid';
+import NamingAsteroid from '../Pages/NamingAsteroid';
 import NotFound from '../Pages/NotFound';
 
 import Header from '../Components/organisms/Header';
@@ -28,8 +28,6 @@ export const App = () => {
     <BrowserRouter>
       <Header />
       <Switch>
-        {/* <DetailsContainer id={detailId} /> */}
-        {/* <DetailsWithQuery path='/detail/:detailId' /> */}
         <Route exact path='/' component={Home} />
         <Route exact path='/detail/:id' component={Details} />
         <Route exact path='/asteroides-apollo' component={AsteroidesApollo} />
