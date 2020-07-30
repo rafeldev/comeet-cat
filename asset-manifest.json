@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/comeet-cat/static/css/main.57906854.chunk.css",
-    "main.js": "/comeet-cat/static/js/main.264154d4.chunk.js",
-    "main.js.map": "/comeet-cat/static/js/main.264154d4.chunk.js.map",
+    "main.css": "/comeet-cat/static/css/main.f97214dd.chunk.css",
+    "main.js": "/comeet-cat/static/js/main.d63c60c2.chunk.js",
+    "main.js.map": "/comeet-cat/static/js/main.d63c60c2.chunk.js.map",
     "runtime-main.js": "/comeet-cat/static/js/runtime-main.132f91d2.js",
     "runtime-main.js.map": "/comeet-cat/static/js/runtime-main.132f91d2.js.map",
     "static/js/2.f348f200.chunk.js": "/comeet-cat/static/js/2.f348f200.chunk.js",
     "static/js/2.f348f200.chunk.js.map": "/comeet-cat/static/js/2.f348f200.chunk.js.map",
     "index.html": "/comeet-cat/index.html",
-    "precache-manifest.98e51bbe880c37b6e5eb2b2df6afbc29.js": "/comeet-cat/precache-manifest.98e51bbe880c37b6e5eb2b2df6afbc29.js",
+    "precache-manifest.9d2b3ebc9b860417fbd7840d9969d47b.js": "/comeet-cat/precache-manifest.9d2b3ebc9b860417fbd7840d9969d47b.js",
     "service-worker.js": "/comeet-cat/service-worker.js",
-    "static/css/main.57906854.chunk.css.map": "/comeet-cat/static/css/main.57906854.chunk.css.map",
+    "static/css/main.f97214dd.chunk.css.map": "/comeet-cat/static/css/main.f97214dd.chunk.css.map",
     "static/js/2.f348f200.chunk.js.LICENSE.txt": "/comeet-cat/static/js/2.f348f200.chunk.js.LICENSE.txt",
     "static/media/Asteroide 08.png": "/comeet-cat/static/media/Asteroide 08.5504f827.png",
     "static/media/Asteroide 10.png": "/comeet-cat/static/media/Asteroide 10.269eb7d3.png",
@@ -18,8 +18,8 @@
     "static/media/CertificadoDigital.png": "/comeet-cat/static/media/CertificadoDigital.5d189d73.png",
     "static/media/CertificateContainer.scss": "/comeet-cat/static/media/CertificadoNombre.6462e40e.png",
     "static/media/index.css": "/comeet-cat/static/media/Fondo2.c816be79.png",
-    "static/media/GithubIcon.svg": "/comeet-cat/static/media/GithubIcon.49858090.svg",
-    "static/media/IconError.svg": "/comeet-cat/static/media/IconError.8e47a65f.svg",
+    "static/media/GithubIcon.svg": "/comeet-cat/static/media/GithubIcon.0cf46809.svg",
+    "static/media/IconError.svg": "/comeet-cat/static/media/IconError.da3b3c53.svg",
     "static/media/LogoFatal.svg": "/comeet-cat/static/media/LogoFatal.e7726fd9.svg",
     "static/media/bootstrap.less": "/comeet-cat/static/media/bootstrap.795f03e9.less",
     "static/media/comeet-cat-logo.svg": "/comeet-cat/static/media/comeet-cat-logo.5b494cb0.svg",
@@ -34,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.132f91d2.js",
     "static/js/2.f348f200.chunk.js",
-    "static/css/main.57906854.chunk.css",
-    "static/js/main.264154d4.chunk.js"
+    "static/css/main.f97214dd.chunk.css",
+    "static/js/main.d63c60c2.chunk.js"
   ]
 }
