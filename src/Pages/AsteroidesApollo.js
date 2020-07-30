@@ -16,7 +16,7 @@ class Home extends Component {
   componentDidMount() {
     this.setState({ filter: this.props.location.search.includes('filter') });
 
-    window.scroll(0, 0);
+    window.scroll(0, 650);
   }
 
   render() {

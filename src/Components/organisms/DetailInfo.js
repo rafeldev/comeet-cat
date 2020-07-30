@@ -81,7 +81,7 @@ class DetailInfo extends Component {
           </li>
         </ul>
         <ButtonPrimaryMedium
-          to='/nombrar-asteroide'
+          to='/comeet-cat/nombrar-asteroide'
           title='Nombra este asteroide'></ButtonPrimaryMedium>
         <Share />
       </div>

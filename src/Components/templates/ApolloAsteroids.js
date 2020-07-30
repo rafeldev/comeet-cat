@@ -28,7 +28,7 @@ export const ListOfApolloAsteroidsComponent = ({
       <div className='Container__title'>
         <TitlesInfo
           value='Ver Asteroides'
-          to='/asteroides-apollo?filter=true'
+          to='comeet-cat/asteroides-apollo?filter=true'
           title='Asteroides Apollo'
           description='Asteroides que cruzan con la órbita de la tierra y son potencialmente peligrosos. '
         />

@@ -11,20 +11,22 @@ class Header extends Component {
     return (
       <div className='Header'>
         <div className='Header__logo'>
-          <Link to='/'>
+          <Link to='/comeet-cat'>
             <img src={ComeetLogo} alt='Logo del header' />
           </Link>
         </div>
         <div className='Header__menu'>
           <ul className='Header__menu--list'>
             <li>
-              <Link to='/'>Home</Link>
+              <Link to='/comeet-cat'>Home</Link>
             </li>
             <li>
-              <Link to='/asteroides-apollo?filter=true'>Asteroides Apollo</Link>
+              <Link to='/comeet-cat/asteroides-apollo?filter=true'>
+                Asteroides Apollo
+              </Link>
             </li>
             <li>
-              <Link to='/asteroides'>Ver todos</Link>
+              <Link to='/comeet-cat/asteroides'>Ver todos</Link>
             </li>
           </ul>
           <a href='https://github.com/rafeldev/comeet-cat' target='blank'>

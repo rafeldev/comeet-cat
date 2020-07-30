@@ -17,8 +17,8 @@ class CallToAction extends Component {
               variedad de ellos y descarga tu documento.
             </p>
             <ButtonPrimaryMedium
-              to='/nombrar-asteroide'
-              title='Descubrir asteroides'
+              to='/comeet-cat/nombrar-asteroide'
+              title='Nombrar tu asteroide'
             />
           </div>
           <img className='cta__img' src={heroImg} alt='' />

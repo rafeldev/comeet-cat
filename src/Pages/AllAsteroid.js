@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Hero from "../Components/templates/Hero";
-import { ListOfApollo } from "../container/AllApollo";
-import EstaticInformation from "../Components/templates/EstaticInformation";
-import CertificateContainer from "../Components/molecules/CertificateContainer";
+import Hero from '../Components/templates/Hero';
+import { ListOfApollo } from '../container/AllApollo';
+import EstaticInformation from '../Components/templates/EstaticInformation';
+import CertificateContainer from '../Components/molecules/CertificateContainer';
 
 class AllAsteroid extends Component {
   componentDidMount() {
-    window.scroll(0, 0);
+    window.scroll(0, 620);
   }
   render() {
     return (

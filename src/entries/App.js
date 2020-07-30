@@ -28,11 +28,19 @@ export const App = () => {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/detail/:id' component={Details} />
-        <Route exact path='/asteroides-apollo' component={AsteroidesApollo} />
-        <Route exact path='/asteroides' component={AllAsteroid} />
-        <Route exact path='/nombrar-asteroide' component={NamingAsteroid} />
+        <Route exact path='/comeet-cat' component={Home} />
+        <Route exact path='/comeet-cat/detail/:id' component={Details} />
+        <Route
+          exact
+          path='/comeet-cat/asteroides-apollo'
+          component={AsteroidesApollo}
+        />
+        <Route exact path='/comeet-cat/asteroides' component={AllAsteroid} />
+        <Route
+          exact
+          path='/comeet-cat/nombrar-asteroide'
+          component={NamingAsteroid}
+        />
         <Route component={NotFound} />
       </Switch>
       <ColaboratorsContainer />

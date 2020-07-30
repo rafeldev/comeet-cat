@@ -26,7 +26,7 @@ export const LastAsteroidsComponent = ({ data: { getNeos = [] } } = {}) => {
       <div className='Container__title'>
         <TitlesInfo
           value='Ver Asteroides'
-          to='/asteroides'
+          to='comeet-cat/asteroides'
           title='Últimos Asteroides'
           description='Descubré los últimos asteroides descubiertos. '
         />

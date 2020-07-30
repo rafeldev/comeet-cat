@@ -85,7 +85,7 @@ class PrincipalCard extends Component {
                 <TiWarningOutline size='40px' />
               )}
             </div>
-            <Link to={`/detail/${this.props._id}`}>
+            <Link to={`/comeet-cat/detail/${this.props._id}`}>
               <ButtonPurpleSmall title='Ver Detalles' />
             </Link>
           </div>
