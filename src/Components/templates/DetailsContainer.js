@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 
 import DetailName from '../organisms/DetailName';
 import DetailInfo from '../organisms/DetailInfo';
-import DetailsTransform from '../organisms/DetailsTransform';
 
 import '../../static/sass/SassComponents/AsteroidDetail.scss';
 

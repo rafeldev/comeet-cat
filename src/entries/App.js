@@ -32,7 +32,7 @@ export const App = () => {
         <Route exact path='/detail/:id' component={Details} />
         <Route exact path='/asteroides-apollo' component={AsteroidesApollo} />
         <Route exact path='/asteroides' component={AllAsteroid} />
-        <Route exact path='/nombrar-asteroide' component={NaminAsteroid} />
+        <Route exact path='/nombrar-asteroide' component={NamingAsteroid} />
         <Route component={NotFound} />
       </Switch>
       <ColaboratorsContainer />

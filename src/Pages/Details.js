@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import DetailsTransform from '../Components/organisms/DetailsTransform';
 
@@ -53,7 +53,6 @@ export const Details = ({ match }) => {
   const {
     params: { id },
   } = match;
-  const [detail, setDetail] = useState(false);
   console.log(typeof match.params.id);
 
   useEffect(() => {
