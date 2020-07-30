@@ -11,7 +11,7 @@ class TitlesInfo extends Component {
         <h2 className="titles-info__title">{this.props.title}</h2>
         <p className="titles-info__description">{this.props.description}</p>
         <Link to={this.props.to}>
-          <ButtonPrimarySmall title="Ver más" />
+          <ButtonPrimarySmall title={this.props.value} />
         </Link>
       </div>
     );

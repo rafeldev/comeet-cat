@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "../../static/sass/SassComponents/Footer.scss";
 import ComeetLogo from "../../img/comeet-cat-logo.svg";
-import { ButtonPrimaryMedium } from "../molecules/Buttons";
+import { ButtonAnchor } from "../molecules/Buttons";
 
 class Footer extends Component {
   render() {
@@ -13,7 +13,10 @@ class Footer extends Component {
             <p>Proyecto creado en:</p>
             <h4>Platzi Master</h4>
             <p>Tu feedback es muy importante para nosotros:</p>
-            <ButtonPrimaryMedium to="/" title="Dar Feedback" />
+            <ButtonAnchor
+              title="Dar Feedback"
+              to="https://forms.gle/kiAh21QSQNZGMqBr9"
+            />
           </div>
           <div className="footer__project">
             <img src={ComeetLogo} alt="Logo del header" />

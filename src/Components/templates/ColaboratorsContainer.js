@@ -14,6 +14,7 @@ class ColaboratorContainer extends Component {
       <div className="colaborators-container__grid">
         <div className="colaborators-container">
           <TitlesInfo
+            value="Sistema de Diseño"
             to="/"
             title="Team Comeet Cat"
             description="Nosotros somos el Team Comeet Cat y creamos este producto para entrenerte. Conoce más de nosotros. Gracias por usar Comeet Cat. "
