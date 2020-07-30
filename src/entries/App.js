@@ -15,30 +15,28 @@ import NotFound from '../Pages/NotFound';
 import Header from '../Components/organisms/Header';
 import Footer from '../Components/templates/Footer';
 import ColaboratorsContainer from '../Components/templates/ColaboratorsContainer';
-import { DetailsContainer } from '../Components/templates/DetailsContainer';
+/* import DetailsWithQuery from '../container/DetailsWithQuery';
+ */
+import { Details } from '../Pages/Details';
 
 import ImgData from '../../src/imgUrl.json';
 
 export const App = () => {
-  const urlParams = new window.URLSearchParams(window.location.search);
-  const detailId = urlParams.get('detalle');
-
   localStorage.setItem('IMG_DATA', JSON.stringify(ImgData));
 
   return (
     <BrowserRouter>
       <Header />
-      {detailId ? (
-        <DetailsContainer id={detailId} />
-      ) : (
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/asteroides-apollo' component={AsteroidesApollo} />
-          <Route exact path='/asteroides' component={AllAsteroid} />
-          <Route exact path='/nombrar-asteroide' component={NaminAsteroid} />
-          <Route component={NotFound} />
-        </Switch>
-      )}
+      <Switch>
+        {/* <DetailsContainer id={detailId} /> */}
+        {/* <DetailsWithQuery path='/detail/:detailId' /> */}
+        <Route exact path='/' component={Home} />
+        <Route exact path='/detail/:id' component={Details} />
+        <Route exact path='/asteroides-apollo' component={AsteroidesApollo} />
+        <Route exact path='/asteroides' component={AllAsteroid} />
+        <Route exact path='/nombrar-asteroide' component={NaminAsteroid} />
+        <Route component={NotFound} />
+      </Switch>
       <ColaboratorsContainer />
       <Footer />
     </BrowserRouter>

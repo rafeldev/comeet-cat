@@ -34,8 +34,6 @@ export const ApolloCardContainer = ({ data: { getNeos = [] } } = {}) => {
     setNeo(neo);
   }, [getNeos]);
 
-  console.log(neo.length);
-
   return (
     <div className='ApolloCardContainer'>
       {cards.map((neo) => (

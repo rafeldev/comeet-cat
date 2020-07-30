@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-// import { Link } from "react-router-dom";
+
+import { Link } from 'react-router-dom';
 
 /* import CardImg from '../../img/heroImg.svg'; */
 
@@ -84,9 +85,9 @@ class PrincipalCard extends Component {
                 <TiWarningOutline size='40px' />
               )}
             </div>
-            <a href={`/?detalle=${this.props._id}`}>
+            <Link to={`/detail/${this.props._id}`}>
               <ButtonPurpleSmall title='Ver Detalles' />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
