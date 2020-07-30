@@ -1,11 +1,32 @@
+
 # Comeet Cat
+![Image of Comeet-cat](https://github.com/rafeldev/comeet-cat/blob/master/src/img/HeaderLogo.svg)
 
 Dynamic asteroid visualization system, Disclosure site dedicated to asteroids.
 
 ## Built with 🛠️
 
 - React
+- React Router
+- React Apollo
+- Graphql
 - SASS
+## Installation 🔨
+
+1. **Clone Project**: 
+```
+git clone https://github.com/rafeldev/comeet-cat.git
+```
+
+2. **Install dependencies**: 
+```
+npm install
+```
+
+3. **execute program**: 
+```
+npm run start
+```
 
 ## Authors ✒️
 
@@ -13,11 +34,12 @@ _Thanks to those who worked on the project and made every effort to achieve the 
 
 - **Hector Reyes** _Frontend Dev_ [social networks](https://www.instagram.com/conejoestelar/)
 - **Rafael Alvarez** _Frontend Dev_ [social networks](https://www.instagram.com/raalvarez_//)
-- **Jairo** _Backend Dev_
+- **Jairo** _Backend Dev_ [Github](https://github.com/jsv1280)
 
 ## API used
 
 - [NASA API Asteroids NeoWs](https://api.nasa.gov/)
+- [GraphQL Documentation API NASA](http://ec2-54-234-62-6.compute-1.amazonaws.com:8080/public/docs/)
 
 ## Help us to share
 
