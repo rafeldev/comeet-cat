@@ -32,7 +32,7 @@ export const ApolloCardContainer = ({ data: { getNeos = [] } } = {}) => {
       neo = getNeos;
     }
     setNeo(neo);
-  }, [filter, getNeos]);
+  }, [filter]);
 
   console.log(filter);
   return (
