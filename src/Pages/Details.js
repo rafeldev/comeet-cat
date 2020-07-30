@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import DetailsTransform from '../Components/organisms/DetailsTransform';
 
 import DetailsWithQuery from '../container/DetailsWithQuery';
-
+import Fatal from '../Components/templates/Fatal';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 
@@ -34,10 +34,10 @@ const GET_DETAIL_ID = gql`
 
 const renderProp = ({ loading, error, data }) => {
   if (loading) {
-    return <h1>Loading...</h1>;
+    return <h3>Loading...</h3>;
   }
   if (error) {
-    return <h1>Error...</h1>;
+    return <Fatal />;
   }
   const { getNeo = {} } = data;
 

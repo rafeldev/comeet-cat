@@ -32,8 +32,9 @@ export const ApolloCardContainer = ({ data: { getNeos = [] } } = {}) => {
       neo = getNeos;
     }
     setNeo(neo);
-  }, [getNeos]);
+  }, [filter]);
 
+  console.log(filter);
   return (
     <div className='ApolloCardContainer'>
       {cards.map((neo) => (

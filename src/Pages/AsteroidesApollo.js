@@ -20,6 +20,7 @@ class Home extends Component {
   }
 
   render() {
+    console.log(this.state.filter);
     return (
       <div>
         <FilterContext.Provider value={this.state.filter}>
