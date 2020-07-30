@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 
 import DetailsTransform from '../Components/organisms/DetailsTransform';
 
+import Spinner from '../Components/molecules/Spinner';
+
 import DetailsWithQuery from '../container/DetailsWithQuery';
 import Fatal from '../Components/templates/Fatal';
 import { gql } from 'apollo-boost';
@@ -34,7 +36,7 @@ const GET_DETAIL_ID = gql`
 
 const renderProp = ({ loading, error, data }) => {
   if (loading) {
-    return <h3>Loading...</h3>;
+    return <Spinner />;
   }
   if (error) {
     return <Fatal />;
@@ -53,7 +55,6 @@ export const Details = ({ match }) => {
   const {
     params: { id },
   } = match;
-  console.log(typeof match.params.id);
 
   useEffect(() => {
     // setDetail({ detail: location.search.includes('detailId') });

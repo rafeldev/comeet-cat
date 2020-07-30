@@ -6,3 +6,23 @@
   grid-template-columns: 308px 308px 308px 308px;
   gap: 10px;
 }
+.react-hooks-paginator .page-link {
+  color: white;
+  border: 1px solid #c15289;
+}
+.page-link {
+  background-color: #c8377f;
+  border-color: #c8377f;
+  color: #fff;
+}
+.page-item:hover .page-link,
+.react-hooks-paginator .page-item.active .page-link {
+  background-color: #febc78;
+  border-color: #febc78;
+  color: #000;
+}
+.react-hooks-paginator .page-item:hover .page-link {
+  background-color: white;
+  border-color: white;
+  color: #000;
+}

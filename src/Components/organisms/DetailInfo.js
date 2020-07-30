@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import { ButtonPrimaryMedium } from "../molecules/Buttons";
-import Share from "../molecules/Share";
-import { TiWarning, TiWarningOutline } from "react-icons/ti";
+import { ButtonPrimaryMedium } from '../molecules/Buttons';
+import Share from '../molecules/Share';
+import { TiWarning, TiWarningOutline } from 'react-icons/ti';
 
-import "../../static/sass/SassComponents/AsteroidDetail.scss";
+import '../../static/sass/SassComponents/AsteroidDetail.scss';
 import {
   GiRingedPlanet,
   GiThunderball,
   GiOrbit,
   GiOrbital,
-} from "react-icons/gi";
+} from 'react-icons/gi';
 
 class DetailInfo extends Component {
   componentDidMount() {
@@ -18,45 +18,45 @@ class DetailInfo extends Component {
   }
   render() {
     return (
-      <div className="detail-info__container">
-        <div className="hazardous-container">
+      <div className='detail-info__container'>
+        <div className='hazardous-container'>
           {this.props.is_potentially_hazardous_asteroid ? (
-            <TiWarning size="80px" />
+            <TiWarning size='80px' />
           ) : (
-            <TiWarningOutline size="80px" />
+            <TiWarningOutline size='80px' />
           )}
         </div>
         <h3>Datos:</h3>
         <ul>
           <li>
-            <GiRingedPlanet className="details-icon" size="1.2em" />
+            <GiRingedPlanet className='details-icon' size='1.2em' />
             Diámetro Estimado:
             <br />
             <h3>
               {this.props.estimated_diameter?.kilometers?.estimated_diameter_max.toFixed(
                 2
-              )}{" "}
-              kms
+              )}{' '}
+              km
             </h3>
           </li>
 
           <li>
-            <GiOrbit className="details-icon" size="1.2em" />
+            <GiOrbit className='details-icon' size='1.2em' />
             Periodo Orbital: <br />
             <h3>
               {this.props.orbital_data?.orbital_period
                 ? parseInt(this.props.orbital_data?.orbital_period, 0)
-                : 0}{" "}
-              días{" "}
+                : 0}{' '}
+              días{' '}
             </h3>
           </li>
 
           <li>
-            <GiThunderball className="details-icon" size="1.2em" />
+            <GiThunderball className='details-icon' size='1.2em' />
             Más cercano a la tierra el:
             <br />
             <h3>
-              {" "}
+              {' '}
               {this.props.close_approach_data.close_approach_date ? (
                 this.props.close_approach_data.close_approach_date
               ) : (
@@ -66,7 +66,7 @@ class DetailInfo extends Component {
           </li>
 
           <li>
-            <GiOrbital className="details-icon" size="1.2em" />
+            <GiOrbital className='details-icon' size='1.2em' />
             Proximidad a la tierra: <br />
             <h3>
               {parseInt(
@@ -75,15 +75,14 @@ class DetailInfo extends Component {
                 ) : (
                   <p>No hay distancia definida</p>
                 )
-              )}{" "}
-              kms{" "}
+              )}{' '}
+              km{' '}
             </h3>
           </li>
         </ul>
         <ButtonPrimaryMedium
-          to="/nombrar-asteroide"
-          title="Nombra este asteroide"
-        ></ButtonPrimaryMedium>
+          to='/nombrar-asteroide'
+          title='Nombra este asteroide'></ButtonPrimaryMedium>
         <Share />
       </div>
     );
