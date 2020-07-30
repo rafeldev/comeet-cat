@@ -1,5 +1,4 @@
 {
-  "homepage": "https://rafeldev.github.io/comeet-cat",
   "name": "comeet-cat",
   "version": "0.1.0",
   "private": true,
@@ -25,8 +24,6 @@
     "sass": "^1.26.9"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
     "npm-run-all": "^4.1.5"
   }
 }
