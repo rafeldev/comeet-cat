@@ -29,6 +29,7 @@ export const App = () => {
       <Header />
       <Switch>
         <Route exact path='/comeet-cat' component={Home} />
+        <Route exact path='/' component={Home} />
         <Route exact path='/comeet-cat/detail/:id' component={Details} />
         <Route
           exact
