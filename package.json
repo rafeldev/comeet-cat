@@ -10,7 +10,7 @@
     "bootstrap-less": "^3.3.8",
     "express": "^4.17.1",
     "graphql": "^15.3.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
     "react-component-export-image": "^0.1.6",
@@ -21,7 +21,7 @@
     "react-js-pagination": "^3.0.3",
     "react-loading": "^2.0.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "sass": "^1.26.9"
   },
   "scripts": {
